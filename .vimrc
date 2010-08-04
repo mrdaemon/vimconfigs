@@ -5,6 +5,7 @@ set number "Line numbering
 set hidden " Keep buffers open, allows switch without save
 set bufhidden=hide " This is to prevent remote edit fuckups
 set history=1000 " Larger command history
+set showmatch " Briefly display matching brackets when inserting such.
 colorscheme desert256 " Assume we are running off a low color terminal
 
 " Kill search highlight with C-n 
@@ -17,9 +18,16 @@ set ignorecase
 set smartcase
 
 " Status Line full of awesome junk
-set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
+"   Filename
+"   end line forat (DOS/UNIX)
+"   Detected filetype
+"   ASCII and Hex for current char
+"   Postion (row, col)
+"   Linecount
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set laststatus=2
 
-" Enable cold folding
+" Enable code folding
 "set foldenable
 "set fdm=indent
 
@@ -47,4 +55,10 @@ if has("gui_running")
 
 	" Awesomest non-256 colors theme if running in gVim
 	colorscheme desert
+
+	" vim 7+: Change status line color in insert mode
+	if version >= 700
+		au InsertEnter * hi StatusLine term=reverse ctermbg=5 gui=bold,reverse
+		au InsertLeave * hi StatusLine term=reverse ctermfg=0 gui=none
+	endif
 endif

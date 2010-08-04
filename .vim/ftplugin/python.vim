@@ -1,5 +1,8 @@
 set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
+" For vicle plugin
+let w:vicle_selection_string = "0v}y"
+
 setlocal tabstop=4
 setlocal softtabstop=4
 setlocal shiftwidth=4
