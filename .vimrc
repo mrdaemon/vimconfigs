@@ -46,7 +46,7 @@ filetype plugin indent on
 
 " Somehow this doesn't work at all in python.vim
 " through ftplugin. No clue why. So here it is. 
-let python_highlight_all = 1
+"let python_highlight_all = 1
 
 " gVim specific junk
 if has("gui_running")
