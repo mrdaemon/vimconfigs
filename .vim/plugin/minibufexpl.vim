@@ -274,7 +274,7 @@
 " Has this plugin already been loaded? {{{
 "
 if exists('loaded_minibufexplorer')
-  finish
+    finish
 endif
 let loaded_minibufexplorer = 1
 " }}}
@@ -1653,8 +1653,7 @@ function! <SID>DEBUG(msg, level)
 
     let &report  = l:save_rep
     let &showcmd = l:save_sc
-
-  endif
+endif
 
 endfunc " }}}
 
