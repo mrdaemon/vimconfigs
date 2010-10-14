@@ -6,7 +6,10 @@ set hidden " Keep buffers open, allows switch without save
 set bufhidden=hide " This is to prevent remote edit fuckups
 set history=1000 " Larger command history
 set showmatch " Briefly display matching brackets when inserting such.
-colorscheme desert256 " Assume we are running off a low color terminal
+"colorscheme desert256 " Assume we are running off a low color terminal
+
+colorscheme mustang " This color scheme supports 256 colors too,
+		    " So, no need for the former hackery.
 
 " Kill search highlight with C-n 
 nmap <silent> <C-N> :silent noh<cr>
@@ -54,7 +57,10 @@ if has("gui_running")
 	set guioptions-=T
 
 	" Awesomest non-256 colors theme if running in gVim
-	colorscheme desert
+	" colorscheme desert
+	
+	" Set font
+	set guifont=Consolas\ 11
 
 	" vim 7+: Change status line color in insert mode
 	if version >= 700
