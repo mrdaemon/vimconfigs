@@ -60,7 +60,7 @@ if has("gui_running")
 	" colorscheme desert
 	
 	" Set font
-	set guifont=Consolas\ 11
+	set guifont=Consolas\ 11.
 
 	" vim 7+: Change status line color in insert mode
 	if version >= 700
