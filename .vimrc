@@ -8,6 +8,10 @@ set history=1000 " Larger command history
 set showmatch " Briefly display matching brackets when inserting such.
 "colorscheme desert256 " Assume we are running off a low color terminal
 
+" Enable 256 colors terminal.
+" Comment out if it bugs you.
+set t_Co=256
+
 colorscheme mustang " This color scheme supports 256 colors too,
 		    " So, no need for the former hackery.
 
