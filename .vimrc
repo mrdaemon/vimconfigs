@@ -6,14 +6,13 @@ set hidden " Keep buffers open, allows switch without save
 set bufhidden=hide " This is to prevent remote edit fuckups
 set history=1000 " Larger command history
 set showmatch " Briefly display matching brackets when inserting such.
-"colorscheme desert256 " Assume we are running off a low color terminal
 
 " Enable 256 colors terminal.
 " Comment out if it bugs you.
 set t_Co=256
 
 colorscheme mustang " This color scheme supports 256 colors too,
-		    " So, no need for the former hackery.
+		    " So, no need for the former hackery. (see history)
 
 " Kill search highlight with C-n 
 nmap <silent> <C-N> :silent noh<cr>
@@ -48,6 +47,12 @@ nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR>
 noremap <F1> :bprev!<CR>
 noremap <F2> :bnext!<CR>
 
+" MiniBufExp behaviour:
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
 " Enable filetype plugin so I don't clutter this.
 filetype plugin indent on
 
@@ -60,9 +65,6 @@ if has("gui_running")
 	" Remove toolbar from gVim, because, frankly, it's a waste of space.
 	set guioptions-=T
 
-	" Awesomest non-256 colors theme if running in gVim
-	" colorscheme desert
-	
 	" Set font
 	set guifont=Consolas\ 11.
 
