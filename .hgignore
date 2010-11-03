@@ -1,0 +1,15 @@
+syntax: regexp
+^\.vim/\.netrwhist$
+^\.vim/\.VimballRecord$
+
+syntax: glob
+*.orig
+*~
+*.bak
+*.old
+.*.sw?
+.sw?
+\#*\#
+DEADJOE
+
+
