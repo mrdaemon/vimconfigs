@@ -647,6 +647,11 @@ taglist-session	taglist.txt	/*taglist-session*
 taglist-todo	taglist.txt	/*taglist-todo*
 taglist-using	taglist.txt	/*taglist-using*
 taglist.txt	taglist.txt	/*taglist.txt*
+textile-changelog	textile.txt	/*textile-changelog*
+textile-commands	textile.txt	/*textile-commands*
+textile-credits	textile.txt	/*textile-credits*
+textile-requirements	textile.txt	/*textile-requirements*
+textile.txt	textile.txt	/*textile.txt*
 vba	pi_vimball.txt	/*vba*
 vimball	pi_vimball.txt	/*vimball*
 vimball-contents	pi_vimball.txt	/*vimball-contents*
