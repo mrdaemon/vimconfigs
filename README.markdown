@@ -14,7 +14,7 @@ Mercurial
 ---------
 
 Also, keep in mind that I mainly use mercurial, and that the github repos is mostly a public mirror.
-I need to tweak my hgweb setup before I allow public access to the primary mercurial repos -- but I do push changes to gitgub routinely, for the greater good. Delicious code bazaar.
+I need to tweak my hgweb setup before I allow public access to the primary mercurial repos -- but I do push changes to github routinely, for the greater good. Delicious code bazaar.
 
 Notes
 -----
