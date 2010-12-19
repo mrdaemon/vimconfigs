@@ -10,6 +10,8 @@ Windows Version
 The windows version of my config is kept in the aptly named branch, win32-base.
 I routinely commit and merge patches randomly between systems, some random machine-specific branches may appear
 
+To install, run "install.cmd". It will create links to the relevant directories in %USERPROFILE%. If mklink is not available, or your windows version is not windows 2008/Windows 7, it will do a plain file copy.
+
 Mercurial
 ---------
 
