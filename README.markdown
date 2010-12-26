@@ -12,12 +12,6 @@ I routinely commit and merge patches randomly between systems, some random machi
 
 To install, run "install.cmd". It will create links to the relevant directories in %USERPROFILE%. If mklink is not available, or your windows version is not windows 2008/Windows 7, it will do a plain file copy.
 
-Mercurial
----------
-
-Also, keep in mind that I mainly use mercurial, and that the github repos is mostly a public mirror.
-I need to tweak my hgweb setup before I allow public access to the primary mercurial repos -- but I do push changes to github routinely, for the greater good. Delicious code bazaar.
-
 Notes
 -----
 
