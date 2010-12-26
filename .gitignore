@@ -1,0 +1,10 @@
+/.vim/.VimballRecord
+/.vim/.netrwhist
+*.orig
+*~
+*.bak
+*.old
+.*.sw?
+.sw?
+\#*\#
+DEADJOE
