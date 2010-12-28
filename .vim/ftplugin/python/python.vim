@@ -13,6 +13,8 @@ setlocal expandtab
 setlocal autoindent ai
 setlocal shiftround " Indent to multiples of shiftwidth. <3
 
+set iskeyword+=. " Testing calltips, they require . to be a keyword.
+
 " Anal retentive settings for PEP8
 setlocal list listchars=tab:>~,trail:* " Display tabs and trailing spaces
 match Error /\%>78v.\+\| \+$/ " Err-hilight text past column 78 and spaces
