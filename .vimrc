@@ -12,8 +12,6 @@ set matchtime=10 " How long to flash matching brackets, in 1/10th of a sec.
 " Let's have some better backspace action.
 set backspace=indent,eol,start
 
-" Automatically read changes occuring outside vim
-
 " Wild completion menu.
 " Slightly better tabbing.
 set wildmenu
@@ -114,6 +112,9 @@ set scrolloff=4
 if has("gui_running")
 	" Remove toolbar and scrollbars from gVim, 
         " because, frankly, they are a waste of space.
+	" Also, really stupid bug where I have to set the options
+	" I wish to remove first. This baffles me, but it works.
+	set guioptions+=Trl
 	set guioptions-=Trl
 
         " Use text more dialogs even in gvim.
