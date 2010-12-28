@@ -27,13 +27,15 @@ syn sync minlines=100
 " Comments and special comment words
 syn keyword ps1CommentTodo TODO FIXME XXX TBD HACK contained
 syn match ps1Comment /#.*/ contains=ps1CommentTodo
+syn region ps1Comment start=/<#/ end=/#>/ contains=ps1CommentTodo
 
 " Language keywords and elements
 syn keyword ps1Conditional if else elseif switch
 syn keyword ps1Repeat while default for do until break continue
 syn match ps1Repeat /\<foreach\>/ nextgroup=ps1Cmdlet
-syn keyword ps1Keyword return filter in trap throw param begin process end
+syn keyword ps1Keyword return filter in param begin process end
 syn match ps1Keyword /\<while\>/ nextgroup=ps1Cmdlet
+syn keyword ps1Exception trap throw try catch finally
 
 " Functions and Cmdlets
 syn match ps1Cmdlet /\w\+-\w\+/
@@ -98,6 +100,7 @@ if version >= 508 || !exists("did_ps1_syn_inits")
   HiLink ps1Keyword Keyword
   HiLink ps1KeywordAndCmdlet Keyword
   HiLink ps1Cmdlet Statement
+  HiLink ps1Exception Exception
   delcommand HiLink
 endif
 

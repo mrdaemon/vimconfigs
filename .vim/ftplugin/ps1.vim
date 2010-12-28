@@ -13,7 +13,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab 
-set list listchars=tab:»·,trail:
 
 " Don't load another plug-in for this buffer
 let b:did_ftplugin = 1
