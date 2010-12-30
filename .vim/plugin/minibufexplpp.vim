@@ -5,20 +5,21 @@
 " Script Info and Documentation  {{{
 "=============================================================================
 "    Copyright: Copyright (C) 2002 & 2003 Bindu Wavell 
+"    		Copyright (C) 2010 Oliver Uvman
 "               Permission is hereby granted to use and distribute this code,
 "               with or without modifications, provided that this copyright
 "               notice is copied with it. Like anything else that's free,
-"               minibufexplorer.vim is provided *as is* and comes with no
+"               minibufexplpp.vim is provided *as is* and comes with no
 "               warranty of any kind, either expressed or implied. In no
 "               event will the copyright holder be liable for any damamges
 "               resulting from the use of this software.
 "
-" Name Of File: minibufexpl.vim
-"  Description: Mini Buffer Explorer Vim Plugin
+" Name Of File: minibufexplpp.vim
+"  Description: Mini Buffer Explorer Vim Plugin Extended
 "   Maintainer: Bindu Wavell <bindu@wavell.net>
 "          URL: http://vim.sourceforge.net/scripts/script.php?script_id=159
-"  Last Change: Thursday, August 5, 2010
-"      Version: 6.3.3
+"  Last Change: Monday, November 8, 2010
+"      Version: 6.3.4
 "               Derived from Jeff Lanzarotta's bufexplorer.vim version 6.0.7
 "               Jeff can be reached at (jefflanzarotta@yahoo.com) and the
 "               original plugin can be found at:
@@ -274,7 +275,7 @@
 " Has this plugin already been loaded? {{{
 "
 if exists('loaded_minibufexplorer')
-    finish
+  finish
 endif
 let loaded_minibufexplorer = 1
 " }}}
@@ -601,6 +602,7 @@ augroup MiniBufExplorer
 autocmd MiniBufExplorer BufDelete   * call <SID>DEBUG('-=> BufDelete AutoCmd', 10) |call <SID>AutoUpdate(expand('<abuf>'))
 autocmd MiniBufExplorer BufEnter    * call <SID>DEBUG('-=> BufEnter  AutoCmd', 10) |call <SID>AutoUpdate(-1)
 autocmd MiniBufExplorer VimEnter    * call <SID>DEBUG('-=> VimEnter  AutoCmd', 10) |let g:miniBufExplorerAutoUpdate = 1 |call <SID>AutoUpdate(-1)
+augroup NONE
 " }}}
 
 " Functions
@@ -1653,19 +1655,25 @@ function! <SID>DEBUG(msg, level)
 
     let &report  = l:save_rep
     let &showcmd = l:save_sc
-endif
+
+  endif
 
 endfunc " }}}
 
 " MBE Script History {{{
 "=============================================================================
 "
-"      History: 6.3.3 o Added additional keybindings. In addition to <TAB> and
+"      History:	6.3.4 o Now returns to augroup NONE after setting augroup
+"      			commands. Big thanks to Maciej Laszcz for the bug
+"      			report!
+"      		6.3.3 o Added additional keybindings. In addition to <TAB> and
 "      			<S-TAB>, l and h can now be used. In addition to <CR>,
 "      			o and e can now be used.
 "      		      o	You can open the selected buffer in a new split window 
 "      		        by pressing s while in the minibufexplorer window.
-"      		        Patch by Oliver Uvman.
+"      		        You can open the selected buffer in a new vertically
+"      		        split window while pressing v while in the
+"      		        minibufexplorer window. Patched by Oliver Uvman.
 "      		6.3.2 o For some reason there was still a call to StopExplorer
 "                       with 2 params. Very old bug. I know I fixed before, 
 "                       any way many thanks to Jason Mills for reporting this!
@@ -1827,7 +1835,7 @@ endfunc " }}}
 "                       opened again unless you do a \mbe (or restart VIM).
 "                     o Removed spaces between "tabs" (even more mini :)
 "                     o Simplified MBE tab processing 
-"               6.0.6 o Fixed register overwrite bug found by SÃ©bastien Pierre
+"               6.0.6 o Fixed register overwrite bug found by Sébastien Pierre
 "               6.0.5 o Fixed an issue with window sizing when we run out of 
 "                       buffers.  
 "                     o Fixed some weird commenting bugs.  
