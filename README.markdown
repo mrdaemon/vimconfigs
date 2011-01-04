@@ -4,18 +4,14 @@ Vim Config Files
 These are my configuration files for the Vi Improved (vim) text editor. Feel free to use them as necessary. 
 The vimrc is well commented. Some packages may or may not suit you, but feel free to browse.
 
-Windows Version
----------------
-
-The windows version of my config is kept in the aptly named branch, win32-base.
-I routinely commit and merge patches randomly between systems, some random machine-specific branches may appear
-
-To install, run "install.cmd". It will create links to the relevant directories in %USERPROFILE%. If mklink is not available, or your windows version is not windows 2008/Windows 7, it will do a plain file copy.
-
 Notes
 -----
 
-Do note that while the vimrc is kept clean within reasonable limits, the rest of the vimballs and plugins may be in various states of decrepitude. Still merging them from various computers I have been hacking on.
+I recently switched to using Pathogen to manage the plugins as bundles. This also allows me to just toss the plugin's git repository in there and have it automagically updated on request.
+
+After a fresh clone, you should do:
+`git submodule update --init --recursive`
+to fetch the bundles.
 
 ### Caveats and potential problems
 
