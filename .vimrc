@@ -1,12 +1,12 @@
-"         ,-.-. .=-.-.       ___                _,.----.   
-"  ,--.-./=/ ,//==/_ /.-._ .'=.'\  .-.,.---.  .' .' -   \  
-" /==/, ||=| -|==|, |/==/ \|==|  |/==/  `   \/==/  ,  ,-'  
-" \==\,  \ / ,|==|  ||==|,|  / - |==|-, .=., |==|-   |  .  
-"  \==\ - ' - /==|- ||==|  \/  , |==|   '='  /==|_   `-' \ 
-"   \==\ ,   ||==| ,||==|- ,   _ |==|- ,   .'|==|   _  , | 
-"   |==| -  ,/|==|- ||==| _ /\   |==|_  . ,'.\==\.       / 
-"   \==\  _ / /==/. //==/  / / , /==/  /\ ,  )`-.`.___.-'  
-"    `--`--'  `--`-` `--`./  `--``--`-`--`--'              
+"         ,-.-. .=-.-.       ___                _,.----.
+"  ,--.-./=/ ,//==/_ /.-._ .'=.'\  .-.,.---.  .' .' -   \
+" /==/, ||=| -|==|, |/==/ \|==|  |/==/  `   \/==/  ,  ,-'
+" \==\,  \ / ,|==|  ||==|,|  / - |==|-, .=., |==|-   |  .
+"  \==\ - ' - /==|- ||==|  \/  , |==|   '='  /==|_   `-' \
+"   \==\ ,   ||==| ,||==|- ,   _ |==|- ,   .'|==|   _  , |
+"   |==| -  ,/|==|- ||==| _ /\   |==|_  . ,'.\==\.       /
+"   \==\  _ / /==/. //==/  / / , /==/  /\ ,  )`-.`.___.-'
+"    `--`--'  `--`-` `--`./  `--``--`-`--`--'
 "
 " Main vim editor confirguation file
 " Alexandre Gauthier <alex@underwares.org>
@@ -21,7 +21,7 @@
 "   @ See vim.org script 2332
 "   @ https://github.com/tpope/vim-pathogen
 " -- Pathogen --
-filetype off 
+filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 " --
@@ -55,14 +55,20 @@ set number      " Line numbering
 syntax on          " Auto select syntax highlighting from filetype
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
-set colorcolumn=80 " Highlight column 80, as a guide.
+
+" Column highlight is only supported on vim 7.3+
+if version >= 703
+    set colorcolumn=80 " Highlight column 80, as a guide.
+    
+    " Override color for highlighted column
+    " Often it is this eye melting red.
+    hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
+endif
 
 " Color Scheme
-colorscheme clouds-midnight
+let g:liquidcarbon_high_contrast=1
+colorscheme liquidcarbon
 
-" Override color for highlighted column
-" Often it is this eye melting red.
-hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
 " --
 
 " -- Windows, Tabs and buffers behavior --
@@ -136,7 +142,7 @@ set history=1000                " Larger command history
 set wildmenu                    " Enable completion menu
 set wildmode=list:longest,full  " Command line completion
 
-" Ignore these partterns while tabbing out to complete 
+" Ignore these partterns while tabbing out to complete
 set wildignore=.svn,.hg,.git,CVS,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,jar,exe,bin,zip
 " --
 
@@ -154,7 +160,7 @@ if version >= 700
     " which has been sitting in my ~/tmp for ages until I shaped it into this.
     let s:sline_hi = {}
     function! s:save_statuslinehl()
-        for g in ['StatusLine', 'StatusLineNC']  
+        for g in ['StatusLine', 'StatusLineNC']
             let l:current = ''
             redir => l:current
             silent exec 'hi '.g
@@ -187,7 +193,7 @@ endif
 
 " -- Keybinds, macros and aliases --
 
-" Kill search highlight with C-n 
+" Kill search highlight with C-n
 nmap <silent> <C-N> :silent noh<cr>
 
 " Toggle line numbering with <F3>
@@ -200,18 +206,18 @@ noremap <F1> :bprev!<CR>
 noremap <F2> :bnext!<CR>
 
 " MiniBufExpl behaviour (enable/disable)
-let g:miniBufExplMapWindowNavVim = 1    " Maps ctrl+ vim movement keys to 
+let g:miniBufExplMapWindowNavVim = 1    " Maps ctrl+ vim movement keys to
                                         " window navigation
-let g:miniBufExplMapWindowNavArrows = 1 " Maps ctrl + arrows to window 
+let g:miniBufExplMapWindowNavArrows = 1 " Maps ctrl + arrows to window
                                         "  navigation
-let g:miniBufExplMapCTabSwitchBufs = 0  " Switch buffer tabs 
+let g:miniBufExplMapCTabSwitchBufs = 0  " Switch buffer tabs
                                         "  with <C-TAB> and <C-S-TAB>
 let g:miniBufExplModSelTarget = 1       " Coerces buffers into not appearing
                                         "  in non-editable windows.
-let g:miniBufExplUseSingleClick = 0     " Activate buffer tabs with a 
+let g:miniBufExplUseSingleClick = 0     " Activate buffer tabs with a
                                         "  single click
 
-" Bind <F4> to MiniBufExpl toggle (hide/show) 
+" Bind <F4> to MiniBufExpl toggle (hide/show)
 noremap <F4> :TMiniBufExplorer<CR>
 
 " Still there? Have some crappy easter eggs.
