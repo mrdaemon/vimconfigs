@@ -58,7 +58,7 @@ set hlsearch       " Highlight search results
 set colorcolumn=80 " Highlight column 80, as a guide.
 
 " Color Scheme:
-set colorscheme=darkspectrum
+colorscheme darkspectrum
 " --
 
 " -- Windows, Tabs and buffers behavior --
@@ -140,8 +140,8 @@ set encoding=utf-8  " Default encoding used through vim
 " vim 7+: Change status line color in insert mode
 " Have I ever mentioned how much I love this?
 if version >= 700
-    au InsertEnter * hi StatusLine term=reverse ctermbg=bold,reverse gui=bold,reverse
-    au InsertLeave * hi StatusLine term=none ctermfg=none gui=none
+    au InsertEnter * hi StatusLine term=reverse cterm=bold,reverse gui=bold,reverse
+    au InsertLeave * hi StatusLine term=none cterm=none gui=none
 endif
 " --
 

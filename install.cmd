@@ -65,11 +65,14 @@ GOTO :EOF
 :do_mklink
 call :filecheck %USERPROFILE%\vimfiles
 call :filecheck %USERPROFILE%\_vimrc
+call :filecheck %USERPROFILE%\_gvimrc
 
 mklink /D %USERPROFILE%\vimfiles %PWD%\.vim
 IF %ERRORLEVEL% GEQ 1 CALL :mklinkerr "Unable to link vimfiles directory!"
 mklink %USERPROFILE%\_vimrc %PWD%\.vimrc
 IF %ERRORLEVEL% GEQ 1 CALL :mklinkerr "Unable to link _vimrc!"
+mklink %USERPROFILE%\_gvimrc %PWD%\.gvimrc
+IF %ERRORLEVEL% GEQ 1 CALL :mklinkerr "Unable to link _gvimrc!"
 GOTO :DONE
 
 :copywarn

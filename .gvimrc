@@ -16,10 +16,18 @@
 "
 "-----------------------------------------------------------------------------
 
-" Remove toolbar and scrollbars from gVim, 
+" Remove toolbar and scrollbars from gVim,
 " because, frankly, they are a waste of space.
-set guioptions-=Trl
-set guifont=Monaco 12
+" Also, for some reason
+set guioptions-=T
+set guioptions-=r
+set guioptions-=l
+
+" Set GUI Font depending on the kind of gui/platform being loaded.
+" TODO: Set these fonts correctly once I load this on my other work platforms.
+if has("gui_win32")
+	:set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
+endif
 
 " Technically, according to the documentation
 " (try :help mousehide if you think I'm a filthy liar)
