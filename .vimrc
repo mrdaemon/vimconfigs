@@ -77,13 +77,15 @@ set laststatus=2   " Always show status bar
 "     Read Only Flag
 "     helo flag
 "     preview flag
-"     
+"     Fugitive (git) status
+"
 "   end line format (DOS/UNIX)
 "   Detected filetype
 "   ASCII and Hex for current char
 "   Postion (row, col)
 "   Linecount
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%{&ff}]\ [%Y]\[ascii\:\%03.3b]\ [hex\:\%02.2B]\ [%04l,%04v][%p%%]\ [F\:%L]
+
 
 "  -Buffers:
 set hidden         " Don't unload buffers when the windows is no longer shown.
@@ -144,8 +146,42 @@ set encoding=utf-8  " Default encoding used through vim
 " vim 7+: Change status line color in insert mode
 " Have I ever mentioned how much I love this?
 if version >= 700
-    au InsertEnter * hi StatusLine term=reverse cterm=bold,reverse gui=bold,reverse
-    au InsertLeave * hi StatusLine term=none cterm=none gui=none
+    " Function to save current status line highlight
+    " settings for StatusLine and StatusLineNC
+    "
+    " Not sure where I originally got the reference code I based
+    " this function upon. Credit goes to whoever wrote the code fragment
+    " which has been sitting in my ~/tmp for ages until I shaped it into this.
+    let s:sline_hi = {}
+    function! s:save_statuslinehl()
+        for g in ['StatusLine', 'StatusLineNC']  
+            let l:current = ''
+            redir => l:current
+            silent exec 'hi '.g
+            redir END
+
+           " Dict to hold the values we will be
+           " modifying -- set to NONE for now.
+           let l:vals = {}
+           for a in ['term', 'cterm', 'gui']
+               let l:vals[a] = 'NONE'
+           endfor
+
+           " Parse current values, map out to attributes
+           " defined above, and save as s:savedstatus_hi[group]
+           for token in split(l:current)[2:-1]
+               let [attribute, value] = split(token, '=')
+               let l:vals[attribute] = value
+           endfor
+           let s:sline_hi[g] = join(map(items(l:vals),'v:val[0]."=".v:val[1]'))
+        endfor
+    endfunction
+
+    call s:save_statuslinehl() " Call our save function once at load
+
+    au ColorScheme * call s:save_statuslinehl() " Save on scheme change
+    au InsertEnter * hi StatusLine term=reverse cterm=reverse gui=reverse,bold
+    au InsertLeave * exec 'hi StatusLine '.s:sline_hi['StatusLine']
 endif
 " --
 
