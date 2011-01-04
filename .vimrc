@@ -57,8 +57,12 @@ set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
 set colorcolumn=80 " Highlight column 80, as a guide.
 
-" Color Scheme:
-colorscheme darkspectrum
+" Color Scheme
+colorscheme clouds-midnight
+
+" Override color for highlighted column
+" Often it is this eye melting red.
+hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
 " --
 
 " -- Windows, Tabs and buffers behavior --

@@ -39,3 +39,12 @@ let python_highlight_all = 1 " MOAR COLORS
 " PyFlakes uses it.
 highlight SpellBad ctermbg=Red ctermfg=Yellow
 
+" Set Pylint as compiler
+compiler pylint
+
+" Do not autorun pylint on write.
+" It is utterly annoying. I'd rather call it myself when
+" I want to, with :make or :Pylint.
+let g:pylint_onwrite = 0
+
+
