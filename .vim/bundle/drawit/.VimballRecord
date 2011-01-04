@@ -1,0 +1,1 @@
+DrawIt.vba.gz: call delete('C:\Users\supernaut\code\vimconfigs\.vim\bundle\drawit/plugin/DrawItPlugin.vim')|call delete('C:\Users\supernaut\code\vimconfigs\.vim\bundle\drawit/plugin/cecutil.vim')|call delete('C:\Users\supernaut\code\vimconfigs\.vim\bundle\drawit/autoload/DrawIt.vim')|call delete('C:\Users\supernaut\code\vimconfigs\.vim\bundle\drawit/doc/DrawIt.txt')
