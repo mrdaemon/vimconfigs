@@ -18,7 +18,6 @@
 
 " Remove toolbar and scrollbars from gVim,
 " because, frankly, they are a waste of space.
-" Also, for some reason
 set guioptions-=T
 set guioptions-=r
 set guioptions-=l
