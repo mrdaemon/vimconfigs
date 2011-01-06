@@ -65,10 +65,9 @@ if version >= 703
     hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
 endif
 
-" Color Scheme
-let g:liquidcarbon_high_contrast=1
-colorscheme liquidcarbon
-
+" Color Scheme for terminal
+" (GUI colorscheme is defined in gvim)
+colorscheme xoria256
 " --
 
 " -- Windows, Tabs and buffers behavior --
