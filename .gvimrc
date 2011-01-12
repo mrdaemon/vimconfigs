@@ -35,7 +35,7 @@ if version >= 703
     
     " Override color for highlighted column
     " Often it is this eye melting red.
-    hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
+    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 
 " Set GUI Font depending on the kind of gui/platform being loaded.
@@ -43,7 +43,7 @@ endif
 if has("gui_win32")
 	:set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
 elseif has("gui_macvim")
-	:set guifont=Menlo Regular:h11
+	:set guifont=Menlo\ Regular:h12
 endif
 
 " Technically, according to the documentation

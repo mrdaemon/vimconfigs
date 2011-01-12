@@ -53,8 +53,17 @@ set number      " Line numbering
 
 " -- Highlighting, spelling and Text Appearance --
 syntax on          " Auto select syntax highlighting from filetype
+
+" Color Scheme for terminal
+" (GUI colorscheme is defined in gvim)
+colorscheme xoria256
+
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
+
+" Override underline for CursorLine on cterm
+" It annoys me more than it actually helps.
+hi CursorLine cterm=none
 
 " Column highlight is only supported on vim 7.3+
 if version >= 703
@@ -62,12 +71,8 @@ if version >= 703
     
     " Override color for highlighted column
     " Often it is this eye melting red.
-    hi ColorColumn term=reverse ctermbg=4 guibg=#1f1f1f
+    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
-
-" Color Scheme for terminal
-" (GUI colorscheme is defined in gvim)
-colorscheme xoria256
 " --
 
 " -- Windows, Tabs and buffers behavior --
