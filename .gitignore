@@ -1,7 +1,8 @@
 /.vim/.VimballRecord
 /.vim/.netrwhist
-*.orig
+/.vim/passwords.vim
 *~
+*.orig
 *.bak
 *.old
 .*.sw?
