@@ -19,9 +19,16 @@
 " Remove toolbar and scrollbars from gVim,
 " because, frankly, they are a waste of space.
 set guioptions-=T
-set guioptions-=m
 set guioptions-=r
 set guioptions-=l
+
+" Only remove menubar on non-windows platforms.
+" The windows version looks a bit like ass without it,
+" somehow, it develops ugly white borders around
+" the bottom frame, I have no clue where they come from.
+if !has("gui_win32")
+        :set guioptions-=m
+endif
 
 " colorscheme to use for GUI
 let g:liquidcarbon_high_contrast=1
