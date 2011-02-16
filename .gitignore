@@ -2,6 +2,8 @@
 /.vim/.netrwhist
 /.vim/passwords.vim
 *~
+*.pyc
+*.pyo
 *.orig
 *.bak
 *.old
