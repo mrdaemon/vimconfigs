@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/jellyx-colorscheme"]
 	path = .vim/bundle/jellyx-colorscheme
 	url = https://github.com/guns/jellyx.vim.git
+[submodule ".vim/bundle/abolish"]
+	path = .vim/bundle/abolish
+	url = https://github.com/tpope/vim-abolish.git
