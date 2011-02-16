@@ -28,3 +28,12 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/vim-toner"]
+	path = .vim/bundle/vim-toner
+	url = https://github.com/niklasl/vim-toner.git
+[submodule ".vim/bundle/xterm-color-table"]
+	path = .vim/bundle/xterm-color-table
+	url = https://github.com/guns/xterm-color-table.vim.git
+[submodule ".vim/bundle/jellyx-colorscheme"]
+	path = .vim/bundle/jellyx-colorscheme
+	url = https://github.com/guns/jellyx.vim.git
