@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule ".vim/bundle/vim-pep8"]
+	path = .vim/bundle/vim-pep8
+	url = https://github.com/jbking/vim-pep8.git
