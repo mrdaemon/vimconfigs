@@ -35,7 +35,7 @@ filetype plugin indent on   " Turns on filetype detection and loading of
 " -- Editor messages, info and verbosity --
 set showcmd        " Show current command, text area etc as last line
 set shortmess=aI   " Use abbreviated messages and selfishly ignore uganda
-set cmdheight=2    " Larger command window, more space for messages, which
+""set cmdheight=2    " Larger command window, more space for messages, which
                    "  directly translates to less *hit ENTER to continue*
 		   "  crap. God that can kill a good workflow.
 set visualbell     " For the love of god STOP BLEEPING WHILE I'M AT WORK
