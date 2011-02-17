@@ -91,3 +91,18 @@
 [submodule ".vim/bundle/CleverCSS"]
 	path = .vim/bundle/CleverCSS
 	url = https://github.com/vim-scripts/clevercss.vim.git
+[submodule ".vim/bundle/conqueshell"]
+	path = .vim/bundle/conqueshell
+	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule ".vim/bundle/manpageview"]
+	path = .vim/bundle/manpageview
+	url = https://github.com/vim-scripts/ManPageView.git
+[submodule ".vim/bundle/vimball"]
+	path = .vim/bundle/vimball
+	url = https://github.com/vim-scripts/Vimball.git
+[submodule ".vim/bundle/VimStructuredText"]
+	path = .vim/bundle/VimStructuredText
+	url = https://github.com/vim-scripts/VST.git
+[submodule ".vim/bundle/DrawIt"]
+	path = .vim/bundle/DrawIt
+	url = https://github.com/vim-scripts/DrawIt.git
