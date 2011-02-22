@@ -1,6 +1,8 @@
 " Set tab stobs and generic settings for python
 " buffers. Joy for everyone.
 
+" -*-*- TL;DR: Set python files to use 4 spaces for tabs -*-*-
+
 setlocal tabstop=8 " Set hard tab value to 8 columns (8 spaces)
 		   " Only affects value of an actual tab, not what you insert
 		   " nor indentation. Leave at 8 to tell soft/hard tabs
