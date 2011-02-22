@@ -106,3 +106,24 @@
 [submodule ".vim/bundle/DrawIt"]
 	path = .vim/bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
+[submodule ".vim/bundle/nginx-syntax"]
+	path = .vim/bundle/nginx-syntax
+	url = https://github.com/vim-scripts/nginx.vim.git
+[submodule ".vim/bundle/httplog-syntax"]
+	path = .vim/bundle/httplog-syntax
+	url = https://github.com/vim-scripts/httplog.git
+[submodule ".vim/bundle/muf"]
+	path = .vim/bundle/muf
+	url = https://github.com/vim-scripts/muf.vim.git
+[submodule ".vim/bundle/vimomni"]
+	path = .vim/bundle/vimomni
+	url = https://github.com/c9s/vimomni.vim.git
+[submodule ".vim/bundle/rvm"]
+	path = .vim/bundle/rvm
+	url = https://github.com/csexton/rvm.vim.git
+[submodule ".vim/bundle/wm-graphviz"]
+	path = .vim/bundle/wm-graphviz
+	url = https://github.com/wannesm/wmgraphviz.vim.git
+[submodule ".vim/bundle/PyInteractive"]
+	path = .vim/bundle/PyInteractive
+	url = https://github.com/vim-scripts/PyInteractive.git
