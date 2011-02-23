@@ -59,7 +59,7 @@ syntax on          " Auto select syntax highlighting from filetype
 
 " Color Scheme for terminal
 " (GUI colorscheme is defined in gvim)
-colorscheme xoria256
+colorscheme nazca
 
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
