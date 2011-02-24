@@ -1,12 +1,12 @@
-"         ,-.-. .=-.-.       ___                _,.----.   
-"  ,--.-./=/ ,//==/_ /.-._ .'=.'\  .-.,.---.  .' .' -   \  
-" /==/, ||=| -|==|, |/==/ \|==|  |/==/  `   \/==/  ,  ,-'  
-" \==\,  \ / ,|==|  ||==|,|  / - |==|-, .=., |==|-   |  .  
-"  \==\ - ' - /==|- ||==|  \/  , |==|   '='  /==|_   `-' \ 
-"   \==\ ,   ||==| ,||==|- ,   _ |==|- ,   .'|==|   _  , | 
-"   |==| -  ,/|==|- ||==| _ /\   |==|_  . ,'.\==\.       / 
-"   \==\  _ / /==/. //==/  / / , /==/  /\ ,  )`-.`.___.-'  
-"    `--`--'  `--`-` `--`./  `--``--`-`--`--'              
+"         ,-.-. .=-.-.       ___                _,.----.
+"  ,--.-./=/ ,//==/_ /.-._ .'=.'\  .-.,.---.  .' .' -   \
+" /==/, ||=| -|==|, |/==/ \|==|  |/==/  `   \/==/  ,  ,-'
+" \==\,  \ / ,|==|  ||==|,|  / - |==|-, .=., |==|-   |  .
+"  \==\ - ' - /==|- ||==|  \/  , |==|   '='  /==|_   `-' \
+"   \==\ ,   ||==| ,||==|- ,   _ |==|- ,   .'|==|   _  , |
+"   |==| -  ,/|==|- ||==| _ /\   |==|_  . ,'.\==\.       /
+"   \==\  _ / /==/. //==/  / / , /==/  /\ ,  )`-.`.___.-'
+"    `--`--'  `--`-` `--`./  `--``--`-`--`--'
 "
 " Specific vim setting for GUI modes (gvim)
 " Alexandre Gauthier <alex@underwares.org>
@@ -35,14 +35,14 @@ let g:liquidcarbon_high_contrast=1
 colorscheme liquidcarbon
 
 " Overridding the color column color in gvim as well -- the colorscheme
-" change above will reset it. 
+" change above will reset it.
 " TODO: make this into a function.
 if version >= 703
     set colorcolumn=80 " Highlight column 80, as a guide.
-    
+
     " Override color for highlighted column
-    " Often it is this eye melting red.
-    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+    " Often it is this eye melting red (Unecessary for liquidcarbon)
+    " hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 
 " Set GUI Font depending on the kind of gui/platform being loaded.
