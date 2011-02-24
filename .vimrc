@@ -71,7 +71,7 @@ hi CursorLine cterm=none
 " Column highlight is only supported on vim 7.3+
 if version >= 703
     set colorcolumn=80 " Highlight column 80, as a guide.
-    
+
     " Override color for highlighted column
     " Often it is this eye melting red.
     hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
@@ -83,8 +83,12 @@ endif
 "  -Windows:
 set laststatus=2   " Always show status bar
 
-" Status Line full of awesome junk
+" Status Line full of awesome junk.
+" Information marked with '*' requires extra functions,
+" most likely defined below.
+"
 "   First block is flags:
+"     Buffer Number
 "     Filename (full path)
 "     Modified Flag
 "     Read Only Flag
@@ -92,12 +96,22 @@ set laststatus=2   " Always show status bar
 "     preview flag
 "     Fugitive (git) status
 "
-"   end line format (DOS/UNIX)
 "   Detected filetype
-"   ASCII and Hex for current char
-"   Postion (row, col)
-"   Linecount
-set statusline=%F%m%r%h%w\ %{fugitive#statusline()}\ [%{&ff}]\ [%Y]\[ascii\:\%03.3b]\ [hex\:\%02.2B]\ [%04l,%04v][%p%%]\ [F\:%L]
+"   Gzipped flag*
+"
+"   File Encoding*
+"   end line format (DOS/UNIX)
+"
+"   Position block:
+"     line,column
+"     Percentage/File linecount
+"
+"   Character block:
+"     ASCII and Hex for current char
+"  
+"   Restart needed flag*
+"
+set statusline=%n\:%f%m%r%h%w%{fugitive#statusline()}\ \%y\%{SafeGet('b:gzf','[gz]')}\ \|%{FileEncoding()}\|%{&ff}\|\ \|\%04l,%04v\|%p%%/%L\|\ \|char\:%03.3b\|0x%02.2B\|\ %{SafeGet('g:needrestart','**CONFIG\!**\ ')}
 
 
 "  -Buffers:
@@ -110,6 +124,8 @@ set bufhidden=hide " Set default action of buffers that are no longer
                    "  a remote edit go terribly wrong when switching buffers
                    "  and forcing this on loading the first buffer prevented
                    "  it. It probably is not necessary, feel free to ignore.
+
+set autoread       " Automatically reload  externally changed file
 
 "  -Tabs:
 set showtabline=1  " Only show tabline if there are more than one tab open.
@@ -159,47 +175,76 @@ set wildignore=.svn,.hg,.git,CVS,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jp
 " -- Misc and AutoCommands --
 set encoding=utf-8  " Default encoding used through vim
 
-" vim 7+: Change status line color in insert mode
-" Have I ever mentioned how much I love this?
-if version >= 700
-    " Function to save current status line highlight
-    " settings for StatusLine and StatusLineNC
-    "
-    " Not sure where I originally got the reference code I based
-    " this function upon. Credit goes to whoever wrote the code fragment
-    " which has been sitting in my ~/tmp for ages until I shaped it into this.
-    let s:sline_hi = {}
-    function! s:save_statuslinehl()
-        for g in ['StatusLine', 'StatusLineNC']
-            let l:current = ''
-            redir => l:current
-            silent exec 'hi '.g
-            redir END
+" Source guard. Everything breaks in creative ways if you just re-source
+" .vimrc in a futile attempt to reload without restarting.
+if !exists("vimrc_sourced")
 
-           " Dict to hold the values we will be
-           " modifying -- set to NONE for now.
-           let l:vals = {}
-           for a in ['term', 'cterm', 'gui']
-               let l:vals[a] = 'NONE'
-           endfor
+    " vim 7+: Change status line color in insert mode
+    " Have I ever mentioned how much I love this?
+    if version >= 700
+        " Function to save current status line highlight
+        " settings for StatusLine and StatusLineNC
+        "
+        " Not sure where I originally got the reference code I based
+        " this function upon. Credit goes to whoever wrote the code fragment
+        " which has been sitting in my ~/tmp for ages until I shaped it into this.
+        let s:sline_hi = {}
+        function! s:save_statuslinehl()
+            for g in ['StatusLine', 'StatusLineNC']
+                let l:current = ''
+                redir => l:current
+                silent exec 'hi '.g
+                redir END
 
-           " Parse current values, map out to attributes
-           " defined above, and save as s:savedstatus_hi[group]
-           for token in split(l:current)[2:-1]
-               let [attribute, value] = split(token, '=')
-               let l:vals[attribute] = value
-           endfor
-           let s:sline_hi[g] = join(map(items(l:vals),'v:val[0]."=".v:val[1]'))
-        endfor
+                " Dict to hold the values we will be
+                " modifying -- set to NONE for now.
+                let l:vals = {}
+                for a in ['term', 'cterm', 'gui']
+                    let l:vals[a] = 'NONE'
+                endfor
+
+                " Parse current values, map out to attributes
+                " defined above, and save as s:savedstatus_hi[group]
+                for token in split(l:current)[2:-1]
+                    let [attribute, value] = split(token, '=')
+                    let l:vals[attribute] = value
+                endfor
+                let s:sline_hi[g] = join(map(items(l:vals),'v:val[0]."=".v:val[1]'))
+            endfor
+        endfunction
+
+        call s:save_statuslinehl() " Call our save function once at load
+
+        au ColorScheme * call s:save_statuslinehl() " Save on scheme change
+        au InsertEnter * hi StatusLine term=reverse cterm=reverse gui=reverse,bold
+        au InsertLeave * exec 'hi StatusLine '.s:sline_hi['StatusLine']
+    endif
+
+    " Safe-Get.
+    " return variable value or empty string.
+    function! SafeGet(var, val)
+        if exists(a:var)
+            return a:val
+        else
+            return ''
+        endif
     endfunction
 
-    call s:save_statuslinehl() " Call our save function once at load
+    " Returns current file encoding.
+    " Currently used for status line.
+    function! FileEncoding()
+        if &fileencoding == ''
+            return "is not set"
+        else
+            return &fenc
+        endif
+    endfunction
 
-    au ColorScheme * call s:save_statuslinehl() " Save on scheme change
-    au InsertEnter * hi StatusLine term=reverse cterm=reverse gui=reverse,bold
-    au InsertLeave * exec 'hi StatusLine '.s:sline_hi['StatusLine']
+    " Autocommands
+    autocmd BufRead *.gz let b:gzf = 1 "[GZ] status bar flag
+    autocmd BufWritePost $MYVIMRC let g:needrestart = 1 " Config modified flag
+    " --
 endif
-" --
 
 " -- Keybinds, macros and aliases --
 
@@ -230,6 +275,8 @@ let g:miniBufExplUseSingleClick = 0     " Activate buffer tabs with a
 " Bind <F4> to MiniBufExpl toggle (hide/show)
 noremap <F4> :TMiniBufExplorer<CR>
 
+
 " Still there? Have some crappy easter eggs.
 map <F12> ggVGg?
 
+let vimrc_loaded = 1

@@ -60,3 +60,7 @@ endif
 " On my system it's just always gone forever.
 " So, we remedy this.
 set nomousehide
+
+" 'Config changed' autocmd hook
+autocmd BufWritePost $MYGVIMRC let g:needrestart = 1
+
