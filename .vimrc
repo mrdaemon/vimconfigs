@@ -234,7 +234,7 @@ if !exists("vimrc_sourced")
     " Currently used for status line.
     function! FileEncoding()
         if &fileencoding == ''
-            return "is not set"
+            return "NONE"
         else
             return &fenc
         endif
