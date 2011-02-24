@@ -275,6 +275,17 @@ let g:miniBufExplUseSingleClick = 0     " Activate buffer tabs with a
 " Bind <F4> to MiniBufExpl toggle (hide/show)
 noremap <F4> :TMiniBufExplorer<CR>
 
+" Pylint Settings
+" Do not autorun pylint nor pop the cwindow open.
+" It is utterly annoying. I'd rather call it myself when
+" I want to, with :make or :Pylint.
+"
+" Seriously. Imagine the cwindow opening up with really anal retentive
+" errors like 'Local variable is never read hurrrr' ON EVERY write. Urgh.
+"
+" It was probably one of the circles of hell.
+let g:pylint_onwrite = 0
+let g:pylint_cwindow = 0
 
 " Still there? Have some crappy easter eggs.
 map <F12> ggVGg?

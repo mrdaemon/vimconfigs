@@ -62,14 +62,15 @@ let python_highlight_all = 1 " MOAR COLORS. Encompasses everything above.
 " (Requires pylint plugin)
 compiler pylint
 
-" Do not autorun pylint on write.
-" It is utterly annoying. I'd rather call it myself when
-" I want to, with :make or :Pylint.
-" 
-" Seriously. Imagine the cwindow opening up with really anal retentive
-" errors like 'Local variable is never read hurrrr' ON EVERY write. Urgh.
-"
-" It was probably one of the circles of hell.
-let g:pylint_onwrite = 0
+
+" Strips spurious whitespace on save
+func! b:DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
+autocmd BufWrite *.py call b:DeleteTrailingWS()
+
 
 
