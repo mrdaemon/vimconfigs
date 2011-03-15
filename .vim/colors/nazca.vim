@@ -110,6 +110,11 @@ if version >= 700 " Vim 7.x specific colors
   hi Search       guifg=#000000 guibg=#FFFFB6 gui=underline ctermfg=0    ctermbg=229 cterm=underline
 endif
 
+" Vim 7.3 specific colors
+if version >= 703
+  hi ColorColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=233 cterm=UNDERLINE
+endif
+
 " Syntax highlighting
 hi Comment     guifg=#7C7C7C guibg=NONE    gui=NONE   ctermfg=8   ctermbg=NONE cterm=NONE
 hi String      guifg=#acff82 guibg=NONE    gui=NONE   ctermfg=156 ctermbg=NONE cterm=NONE

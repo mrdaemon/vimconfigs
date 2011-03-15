@@ -41,8 +41,8 @@ if version >= 703
     set colorcolumn=80 " Highlight column 80, as a guide.
 
     " Override color for highlighted column
-    " Often it is this eye melting red (Unecessary for liquidcarbon)
-    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+    " Often it is this eye melting red (Unecessary for liquidcarbon and nazca)
+    "hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 
 " Set GUI Font depending on the kind of gui/platform being loaded.
