@@ -127,3 +127,6 @@
 [submodule ".vim/bundle/PyInteractive"]
 	path = .vim/bundle/PyInteractive
 	url = https://github.com/vim-scripts/PyInteractive.git
+[submodule ".vim/bundle/jinja"]
+	path = .vim/bundle/jinja
+	url = https://github.com/vim-scripts/Jinja
