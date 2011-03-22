@@ -287,7 +287,16 @@ noremap <F4> :TMiniBufExplorer<CR>
 let g:pylint_onwrite = 0
 let g:pylint_cwindow = 0
 
+" -*- vimpager -*-
+let vimpager_use_gvim=1 " Allow gvim use for pager. Note that script
+                        "  will not attempt this unless  there is no $DISPLAY
+
+" Source local vim password file if there is such a thing
+if filereadable('.vimpasswd')
+    source '.vimpasswd'
+endif
+
 " Still there? Have some crappy easter eggs.
 map <F12> ggVGg?
 
-let vimrc_loaded = 1
+let vimrc_sourced = 1
