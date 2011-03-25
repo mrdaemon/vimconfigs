@@ -61,8 +61,14 @@ syntax on          " Auto select syntax highlighting from filetype
 " (GUI colorscheme is defined in gvim)
 
 " OS X uses the iTerm2 solarize scheme as well
+" In this case, using the 16 colors theme and relying on the terminal
+" emulator to show the right color is apparently superior, according to
+" the solarize author. 
+"
+" I have yet to make my non OS X machines use it, so it's only enabled
+" for them at the moment.
 if has('macunix')
-    let g:solarized_termcolors=16
+    let g:solarized_termcolors=16 " Force solarize in 16 colors
 endif
 
 set background=dark " Force dark version
