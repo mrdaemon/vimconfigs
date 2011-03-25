@@ -48,7 +48,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule ".vim/bundle/minibufexpl"]
 	path = .vim/bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
+	url = git@github.com:mrdaemon/minibufexpl.vim.git
 [submodule ".vim/bundle/easytags"]
 	path = .vim/bundle/easytags
 	url = https://github.com/vim-scripts/easytags.vim.git
