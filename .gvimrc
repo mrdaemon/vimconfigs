@@ -51,6 +51,7 @@ endif
 if has("gui_win32")
 	:set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
 elseif has("gui_macvim")
+	:set antialias " Use smooth, antialiased fonts (OS X Specific)
 	:set guifont=Menlo\ Regular:h12
 endif
 
