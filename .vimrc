@@ -59,6 +59,12 @@ syntax on          " Auto select syntax highlighting from filetype
 
 " Color Scheme for terminal
 " (GUI colorscheme is defined in gvim)
+
+" OS X uses the iTerm2 solarize scheme as well
+if has('macunix')
+    let g:solarized_termcolors=16
+endif
+
 set background=dark " Force dark version
 colorscheme solarized
 
