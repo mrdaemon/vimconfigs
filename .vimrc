@@ -171,7 +171,16 @@ set backspace=indent,eol,start  " Make backspace useful in insert mode:
 
 " -- Indent and tabbing --
 "  NOTE: The proper tabbing settings, i.e. shiftwdith, tabstop, etc
-set smartindent   " Proper awesome indenting
+"        are all defined in their specific filetype plugins wherever they
+"        actually differ from the generic defaults below.
+
+set autoindent     " Automatically match indent of previous line, except if
+                   "  the line starts with '#'. To disable that, see the
+		   "  keybind section of this file.
+
+"set smartindent   " Automatically indent based on c-like language rules.
+                   "  -- Do not enable unlike you really enjoy breaking
+		   "  filetype-based indentation and fighting it forever.
 
 set tabstop=8      " Hard tab set to standard 8 spaces
 set softtabstop=4  " Number of spaces used for <Tab> during editing
