@@ -164,7 +164,9 @@ set infercase    " Adjust case of completed text
 
 set showmatch    " Briefly display matching brackets when inserting such.
 set matchtime=10 " How long to flash matching brackets, in 1/10th of a sec.
-set backspace=indent,eol,start  " Make backspace useful in insert mode.
+set backspace=indent,eol,start  " Make backspace useful in insert mode:
+				"  Allows backspace over indent, end of line
+				"  and start of line.
 " --
 
 " -- Indent and tabbing --
@@ -200,7 +202,8 @@ if !exists("vimrc_sourced")
         "
         " Not sure where I originally got the reference code I based
         " this function upon. Credit goes to whoever wrote the code fragment
-        " which has been sitting in my ~/tmp for ages until I shaped it into this.
+        " which has been sitting in my ~/tmp for ages until I shaped it into 
+	" this.
         let s:sline_hi = {}
         function! s:save_statuslinehl()
             for g in ['StatusLine', 'StatusLineNC']
@@ -302,7 +305,7 @@ let g:pylint_cwindow = 0
 
 " -*- vimpager -*-
 let vimpager_use_gvim=1 " Allow gvim use for pager. Note that script
-                        "  will not attempt this unless  there is no $DISPLAY
+                        "  will not attempt this unless there is no $DISPLAY
 
 " Still there? Have some crappy easter eggs.
 map <F12> ggVGg?
