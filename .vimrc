@@ -171,8 +171,15 @@ set backspace=indent,eol,start  " Make backspace useful in insert mode:
 
 " -- Indent and tabbing --
 "  NOTE: The proper tabbing settings, i.e. shiftwdith, tabstop, etc
-"        are all defined in their specific filetype plugins.
 set smartindent   " Proper awesome indenting
+
+set tabstop=8      " Hard tab set to standard 8 spaces
+set softtabstop=4  " Number of spaces used for <Tab> during editing
+set shiftwidth=4   " Number of spaces for each (auto)indent step.
+set expandtab      " <Tab> inserts enough spaces to match the size of a tab,
+                   "  which is defined above. Effectively makes the <Tab> key
+		   "  insert spaces instead of hard tabs.
+
 " --
 
 "-- Insert mode completion
