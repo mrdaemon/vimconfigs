@@ -124,12 +124,12 @@
 [submodule ".vim/bundle/wm-graphviz"]
 	path = .vim/bundle/wm-graphviz
 	url = https://github.com/wannesm/wmgraphviz.vim.git
-[submodule ".vim/bundle/PyInteractive"]
-	path = .vim/bundle/PyInteractive
-	url = https://github.com/vim-scripts/PyInteractive.git
 [submodule ".vim/bundle/jinja"]
 	path = .vim/bundle/jinja
 	url = https://github.com/vim-scripts/Jinja
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/pyrepl"]
+	path = .vim/bundle/pyrepl
+	url = https://github.com/Bogdanp/pyrepl.vim.git
