@@ -140,6 +140,9 @@ set bufhidden=hide " Set default action of buffers that are no longer
 
 set autoread       " Automatically reload  externally changed file
 
+set confirm        " When a command fails due to unsaved changes, ask to save,
+                   "  instead of flat out failing.
+
 "  -Tabs:
 set showtabline=1  " Only show tabline if there are more than one tab open.
 
