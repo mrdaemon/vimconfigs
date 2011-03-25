@@ -32,6 +32,7 @@ endif
 
 " colorscheme to use for GUI
 "let g:liquidcarbon_high_contrast=1
+set background=dark
 colorscheme solarized
 
 " Overridding the color column color in gvim as well -- the colorscheme
