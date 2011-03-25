@@ -32,7 +32,7 @@ endif
 
 " colorscheme to use for GUI
 "let g:liquidcarbon_high_contrast=1
-colorscheme nazca
+colorscheme solarized
 
 " Overridding the color column color in gvim as well -- the colorscheme
 " change above will reset it.
