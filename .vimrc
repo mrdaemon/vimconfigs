@@ -295,6 +295,9 @@ nnoremap <S-F3> :set relativenumber!<CR>
 noremap <F1> :bprev!<CR>
 noremap <F2> :bnext!<CR>
 
+" Toggle between paste and insert mode with F11
+set pastetoggle=<F11>
+
 " MiniBufExpl behaviour (enable/disable)
 let g:miniBufExplMapWindowNavVim = 1    " Maps ctrl+ vim movement keys to
                                         " window navigation
