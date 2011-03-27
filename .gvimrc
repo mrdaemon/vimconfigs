@@ -31,7 +31,6 @@ if !has("gui_win32")
 endif
 
 " colorscheme to use for GUI
-"let g:liquidcarbon_high_contrast=1
 set background=dark
 colorscheme solarized
 
@@ -53,6 +52,11 @@ if has("gui_win32")
 elseif has("gui_macvim")
 	:set antialias " Use smooth, antialiased fonts (OS X Specific)
 	:set guifont=Menlo\ Regular:h12
+endif
+
+" MacVim specific: Set fullscreen options to be ass full screen as possible
+if has("gui_macvim")
+    set fuoptions=maxhorz,maxvert
 endif
 
 " Technically, according to the documentation
