@@ -141,6 +141,8 @@
 [submodule ".vim/bundle/vim-git"]
 	path = .vim/bundle/vim-git
 	url = https://github.com/tpope/vim-git.git
-[submodule "vim-endwise"]
-	path = vim-endwise
+        ignore = untracked
+[submodule ".vim/bundle/vim-endwise"]
+	path = .vim/bundle/vim-endwise
 	url = https://github.com/tangledhelix/vim-endwise
+        ignore = untracked
