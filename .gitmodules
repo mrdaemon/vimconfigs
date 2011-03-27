@@ -150,3 +150,7 @@
 	path = .vim/bundle/extradite
 	url = https://github.com/int3/vim-extradite
         ignore = untracked
+[submodule ".vim/bundle/indent-object"]
+	path = .vim/bundle/indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+        ignore = untracked
