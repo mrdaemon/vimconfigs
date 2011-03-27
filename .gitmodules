@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/html5"]
 	path = .vim/bundle/html5
 	url = https://github.com/othree/html5.vim.git
-[submodule ".vim/bundle/rails"]
-	path = .vim/bundle/rails
-	url = git://github.com/tpope/vim-rails.git
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
@@ -28,15 +25,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule ".vim/bundle/vim-toner"]
-	path = .vim/bundle/vim-toner
-	url = https://github.com/niklasl/vim-toner.git
-[submodule ".vim/bundle/xterm-color-table"]
-	path = .vim/bundle/xterm-color-table
-	url = https://github.com/guns/xterm-color-table.vim.git
-[submodule ".vim/bundle/jellyx-colorscheme"]
-	path = .vim/bundle/jellyx-colorscheme
-	url = https://github.com/guns/jellyx.vim.git
 [submodule ".vim/bundle/abolish"]
 	path = .vim/bundle/abolish
 	url = https://github.com/tpope/vim-abolish.git
@@ -49,18 +37,9 @@
 [submodule ".vim/bundle/minibufexpl"]
 	path = .vim/bundle/minibufexpl
 	url = git@github.com:mrdaemon/minibufexpl.vim.git
-[submodule ".vim/bundle/easytags"]
-	path = .vim/bundle/easytags
-	url = https://github.com/vim-scripts/easytags.vim.git
-[submodule ".vim/bundle/AutoClose"]
-	path = .vim/bundle/AutoClose
-	url = https://github.com/vim-scripts/AutoClose.git
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule ".vim/bundle/indexer"]
-	path = .vim/bundle/indexer
-	url = https://github.com/vim-scripts/indexer.tar.gz.git
 [submodule ".vim/bundle/codepad"]
 	path = .vim/bundle/codepad
 	url = https://github.com/vim-scripts/codepad.git
@@ -76,9 +55,6 @@
 [submodule ".vim/bundle/yate"]
 	path = .vim/bundle/yate
 	url = https://github.com/vim-scripts/yate.git
-[submodule ".vim/bundle/scratch"]
-	path = .vim/bundle/scratch
-	url = https://github.com/vim-scripts/scratch.git
 [submodule ".vim/bundle/pydoc"]
 	path = .vim/bundle/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim.git
@@ -91,9 +67,6 @@
 [submodule ".vim/bundle/CleverCSS"]
 	path = .vim/bundle/CleverCSS
 	url = https://github.com/vim-scripts/clevercss.vim.git
-[submodule ".vim/bundle/conqueshell"]
-	path = .vim/bundle/conqueshell
-	url = https://github.com/vim-scripts/Conque-Shell.git
 [submodule ".vim/bundle/manpageview"]
 	path = .vim/bundle/manpageview
 	url = https://github.com/vim-scripts/ManPageView.git
@@ -118,9 +91,6 @@
 [submodule ".vim/bundle/vimomni"]
 	path = .vim/bundle/vimomni
 	url = https://github.com/c9s/vimomni.vim.git
-[submodule ".vim/bundle/rvm"]
-	path = .vim/bundle/rvm
-	url = https://github.com/csexton/rvm.vim.git
 [submodule ".vim/bundle/wm-graphviz"]
 	path = .vim/bundle/wm-graphviz
 	url = https://github.com/wannesm/wmgraphviz.vim.git
