@@ -284,6 +284,12 @@ endif
 " Enable spell checking for things that look like commit logs.
 autocmd filetype svn,*commit* set spell
 
+" Command to open a non-file backed buffer showing difference between current
+" buffer state and file on disk. Useful for figuring out what you actually
+" changed before going out and writing the buffer to disk.
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p 
+            \ | diffthis
+
 " -- Keybinds, macros and aliases --
 
 " Kill search highlight with C-n
