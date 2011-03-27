@@ -146,3 +146,7 @@
 	path = .vim/bundle/vim-endwise
 	url = https://github.com/tangledhelix/vim-endwise
         ignore = untracked
+[submodule ".vim/bundle/extradite"]
+	path = .vim/bundle/extradite
+	url = https://github.com/int3/vim-extradite
+        ignore = untracked
