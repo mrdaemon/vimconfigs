@@ -281,6 +281,9 @@ if !exists("vimrc_sourced")
     " --
 endif
 
+" Enable spell checking for things that look like commit logs.
+autocmd filetype svn,*commit* set spell
+
 " -- Keybinds, macros and aliases --
 
 " Kill search highlight with C-n
