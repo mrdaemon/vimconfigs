@@ -66,3 +66,8 @@ set nomousehide
 " 'Config changed' autocmd hook
 autocmd BufWritePost $MYGVIMRC let g:needrestart = 1
 
+" Attempt to source .gvimrc.local for very machine-specific configurations that
+" would benefit absolutely no one by being here. Mostly bug workarounds.
+if filereadable(expand('~/.gvimrc.local'))
+    source ~/.gvimrc.local
+endif

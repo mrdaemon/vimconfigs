@@ -341,4 +341,10 @@ let vimpager_use_gvim=1 " Allow gvim use for pager. Note that script
 " Still there? Have some crappy easter eggs.
 map <F12> ggVGg?
 
+" Attempt to source .vimrc.local for very machine-specific configurations that
+" would benefit absolutely no one by being here. Mostly bug workarounds.
+if filereadable(expand('~/.vimrc.local'))
+    source ~/.vimrc.local
+endif
+
 let vimrc_sourced = 1
