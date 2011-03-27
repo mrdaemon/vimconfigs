@@ -138,3 +138,6 @@
 	path = .vim/bundle/pyrepl
 	url = https://github.com/Bogdanp/pyrepl.vim.git
         ignore = untracked
+[submodule ".vim/bundle/vim-git"]
+	path = .vim/bundle/vim-git
+	url = https://github.com/tpope/vim-git.git
