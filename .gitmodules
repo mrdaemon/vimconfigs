@@ -162,3 +162,7 @@
 	path = .vim/bundle/html-autoclosetag
 	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
         ignore = untracked
+[submodule ".vim/bundle/autoclose"]
+	path = .vim/bundle/autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+        ignore = untracked
