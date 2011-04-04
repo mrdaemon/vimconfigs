@@ -327,6 +327,17 @@ noremap <F2> :bnext!<CR>
 " Toggle between paste and insert mode with F11
 set pastetoggle=<F11>
 
+" Supertab Settings -- {
+" Set default completion to 'context' and omnicomplete
+let g:SuperTabSefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
+" -- }
+
+" Snipmate Settings -- {
+" You may override the author setting in your .vimrc.local
+let g:snips_author = 'Alexandre Gauthier <alex@underwares.org>'
+" -- }
+
 " MiniBufExpl settings -- {
 let g:miniBufExplMapWindowNavVim = 1    " Maps ctrl+ vim movement keys to
                                         " window navigation
