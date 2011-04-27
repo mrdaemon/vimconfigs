@@ -22,6 +22,15 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=l
 
+" Add Vim icon to window, where it is shown depends on platform, windowing
+" system, X11 server depth, etc etc.
+set guioptions+=i
+
+" Automagically yank to windowing system clipboard on visual select.
+" This makes gvim behave like a normal unix application.
+set guioptions+=a
+
+
 " Only remove menubar on non-windows platforms.
 " The windows version looks a bit like ass without it,
 " somehow, it develops ugly white borders around
@@ -57,6 +66,12 @@ endif
 " MacVim specific: Set fullscreen options to be ass full screen as possible
 if has("gui_macvim")
     set fuoptions=maxhorz,maxvert
+endif
+
+" Set semi-sensible default window sizes for gui
+if has('gui_running')
+    set lines=54 " Yes 54 lines is completely arbitrary.
+    set columns=87
 endif
 
 " Technically, according to the documentation
