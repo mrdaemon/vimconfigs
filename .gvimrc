@@ -40,8 +40,8 @@ if !has("gui_win32")
 endif
 
 " colorscheme to use for GUI
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 " Overridding the color column color in gvim as well -- the colorscheme
 " change above will reset it.
