@@ -71,7 +71,9 @@ endif
 " Set semi-sensible default window sizes for gui
 if has('gui_running')
     set lines=54 " Yes 54 lines is completely arbitrary.
-    set columns=87
+    set columns=100 " I like some extra horizontal space by default.
+                    " For some reason it helps me focus, and not everyone
+                    " aligns their code to 80 columns.
 endif
 
 " Technically, according to the documentation
