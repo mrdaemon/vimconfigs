@@ -169,3 +169,4 @@
 [submodule ".vim/bundle/Conque-Shell"]
 	path = .vim/bundle/Conque-Shell
 	url = https://github.com/vim-scripts/Conque-Shell.git
+        ignore = untracked
