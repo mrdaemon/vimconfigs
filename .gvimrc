@@ -61,6 +61,8 @@ if has("gui_win32")
 elseif has("gui_macvim")
 	:set antialias " Use smooth, antialiased fonts (OS X Specific)
 	:set guifont=Menlo\ Regular:h12
+elseif has("gui_gnome")
+        :set guifont=DejaVu\ Sans\ Mono\ 11
 endif
 
 " MacVim specific: Set fullscreen options to be ass full screen as possible
