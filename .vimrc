@@ -34,6 +34,23 @@ filetype plugin indent on   " Turns on filetype detection and loading of
                             " plugin and syntax files.
 
 set encoding=utf-8          " Default encoding used through vim
+
+
+" Enable modelines in patched/safe vim versions and disable them in any
+" vulnerable version. Modelines are vim settings embedded in files, such as
+" the first line of his very file.
+if (v:version == 603 && has("patch045")) || (v:version > 603)
+    set modeline
+else
+    set nomodeline
+endif
+
+" Enable undo file in case of modernity
+if (v:version > 703)
+    set undodir=~/.vim/undofiles
+    set undofile
+endif
+
 " }
 
 " Editor messages, info and verbosity {
