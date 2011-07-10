@@ -402,7 +402,7 @@ let vimpager_use_gvim=1 " Allow gvim use for pager. Note that script
 if !has('gui_win32')
     let g:syntastic_enable_signs=1 " Use :sign to show errors
     let g:syntastic_auto_jump=1     " Automagically jump to errors when saving
-    let g:syntastic_auto_loc_list=1 " 2 - Autoclose loc window when error free
+    let g:syntastic_auto_loc_list=2 " 2 - Autoclose loc window when error free
                                     " but never open it at all. 1 is auto
                                     " everything forever.
 

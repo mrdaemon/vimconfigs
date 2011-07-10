@@ -29,9 +29,8 @@ setlocal textwidth=72 " Wrap text to 72 columns. Note that this doesn't affect
 		      " See 'formatoptions below'
 
 " Anal retentive settings for PEP8
-setlocal list listchars=tab:>~,trail:* " Display tabs and trailing spaces
 match Error /\%>78v.\+\| \+$/ " Err-hilight text past column 78 and spaces
-setlocal formatoptions=cq " Autowrap comments to textwidth, but not code.
+setlocal formatoptions+=cq " Autowrap comments to textwidth, but not code.
 
 " Syntax tweaks
 " Change indent after an open paren to be aligned on shiftwidth
