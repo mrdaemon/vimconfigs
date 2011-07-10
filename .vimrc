@@ -308,6 +308,20 @@ autocmd BufWritePost $MYVIMRC let g:needrestart = 1 " Config modified flag
 
 " Enable spell checking for things that look like commit logs.
 autocmd filetype svn,*commit* set spell
+
+" Enable * and # in visual selection mode. This owns.
+" Scroolose is my hero, read his blog like a motherfucker.
+function! s:VSetSearch()
+  let temp = @@
+  norm! gvy
+  let @/ = '\V' . substitute(escape(@@, '\'), '\n', '\\n', 'g')
+  let @@ = temp
+endfunction
+
+vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
+vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
+
+
 " -- }
 " }
 
