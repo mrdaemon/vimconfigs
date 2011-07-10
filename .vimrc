@@ -360,6 +360,20 @@ let g:pylint_cwindow = 0
 let vimpager_use_gvim=1 " Allow gvim use for pager. Note that script
                         "  will not attempt this unless there is no $DISPLAY
 " -- }
+
+" Syntastic (*nix only) -- {
+if !has('gui_win32')
+    let g:syntastic_enable_signs=1 " Use :sign to show errors
+    let g:syntastic_auto_jump=1     " Automagically jump to errors when saving
+    let g:syntastic_auto_loc_list=1 " 2 - Autoclose loc window when error free
+                                    " but never open it at all. 1 is auto
+                                    " everything forever.
+
+    " let g:syntastic_disabled_filetypes = ['python', 'java']
+endif
+
+" -- }
+
 " }
 
 " Misc {

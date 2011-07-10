@@ -174,4 +174,7 @@
 	path = .vim/bundle/enter-indent
 	url = git://github.com/vim-scripts/Enter-Indent.git
         ignore = untracked
-
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+        ignore = untracked
