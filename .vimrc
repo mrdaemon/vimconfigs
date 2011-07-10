@@ -78,6 +78,12 @@ set foldenable        " Enable folds
 set foldmethod=marker " Fold blocks using markers in the text
 set foldlevel=100     " Keep all folds open by default
 
+set formatoptions-=o  " Don't continue comments when opening a new line
+                      " with o/O
+
+" Set prettier non printing characters
+set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
 " -- Highlighting, spelling and Text Appearance {
 syntax on          " Auto select syntax highlighting from filetype
 
