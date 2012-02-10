@@ -65,7 +65,7 @@ elseif has("gui_gnome")
         :set guifont=DejaVu\ Sans\ Mono\ 11
 endif
 
-" MacVim specific: Set fullscreen options to be ass full screen as possible
+" MacVim specific: Set fullscreen options to be as full screen as possible
 if has("gui_macvim")
     set fuoptions=maxhorz,maxvert
 endif
