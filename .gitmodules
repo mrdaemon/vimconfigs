@@ -18,10 +18,6 @@
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
         ignore = untracked
-[submodule ".vim/bundle/pyflakes"]
-	path = .vim/bundle/pyflakes
-	url = git://github.com/kevinw/pyflakes-vim.git
-        ignore = untracked
 [submodule ".vim/bundle/gundo"]
 	path = .vim/bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
