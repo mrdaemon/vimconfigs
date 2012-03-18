@@ -178,7 +178,3 @@
 	path = .vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
         ignore = untracked
-[submodule ".vim/bundle/nazca-colorscheme"]
-	path = .vim/bundle/nazca-colorscheme
-	url = https://github.com/jelera/vim-nazca-colorscheme.git
-        ignore = untracked
