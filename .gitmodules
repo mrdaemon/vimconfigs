@@ -178,3 +178,6 @@
 	path = .vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
         ignore = untracked
+[submodule ".vim/bundle/webapi-vim"]
+	path = .vim/bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
