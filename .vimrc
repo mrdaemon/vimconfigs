@@ -88,7 +88,7 @@ set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 syntax on          " Auto select syntax highlighting from filetype
 
 " Color Scheme 
-" (GUI colorscheme is defined in gvim)
+" (GUI colorscheme is defined in .gvimrc)
 
 "set background=dark " Force dark version
 colorscheme nazca
