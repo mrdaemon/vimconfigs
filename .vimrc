@@ -327,6 +327,9 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
 
 " Keybinds and plugin settings {
 
+" Map leader key to comma because backslash is dumb on non us keymaps
+let mapleader = ","
+
 " Unbind the arrow keys. See this as preemptive rage prevention.
 map <up> <nop>
 map <down> <nop>
