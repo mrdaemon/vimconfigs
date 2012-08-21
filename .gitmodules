@@ -183,3 +183,6 @@
 [submodule ".vim/bundle/vim-togglelist"]
 	path = .vim/bundle/vim-togglelist
 	url = git://github.com/xaimus/vim-togglelist.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
