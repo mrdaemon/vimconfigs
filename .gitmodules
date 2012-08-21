@@ -177,12 +177,16 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+	ignore = untracked
 [submodule ".vim/bundle/solarized"]
 	path = .vim/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+	ignore = untracked
 [submodule ".vim/bundle/vim-togglelist"]
 	path = .vim/bundle/vim-togglelist
 	url = git://github.com/xaimus/vim-togglelist.git
+	ignore = untracked
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+	ignore = untracked
