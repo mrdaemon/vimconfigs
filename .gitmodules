@@ -186,3 +186,6 @@
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule ".vim/bundle/colorscheme-vim-hybrid"]
+	path = .vim/bundle/colorscheme-vim-hybrid
+	url = git://github.com/w0ng/vim-hybrid.git
