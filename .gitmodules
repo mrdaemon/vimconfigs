@@ -181,7 +181,7 @@
 [submodule ".vim/bundle/solarized"]
 	path = .vim/bundle/solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-	ignore = untracked
+	ignore = dirty
 [submodule ".vim/bundle/vim-togglelist"]
 	path = .vim/bundle/vim-togglelist
 	url = git://github.com/xaimus/vim-togglelist.git
