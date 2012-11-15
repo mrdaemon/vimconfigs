@@ -40,8 +40,8 @@ if !has("gui_win32")
 endif
 
 " colorscheme to use for GUI
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme nazca
 
 " Overridding the color column color in gvim as well -- the colorscheme
 " change above will reset it.
@@ -57,12 +57,12 @@ endif
 " Set GUI Font depending on the kind of gui/platform being loaded.
 " TODO: Set these fonts correctly once I load this on my other work platforms.
 if has("gui_win32")
-	:set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
+	:set guifont=Consolas:h11:cANSI
 elseif has("gui_macvim")
 	:set antialias " Use smooth, antialiased fonts (OS X Specific)
 	:set guifont=Menlo\ Regular:h12
 elseif has("gui_gnome")
-        :set guifont=DejaVu\ Sans\ Mono\ 11
+        :set guifont=DejaVu\ Sans\ Mono\ 10
 endif
 
 " MacVim specific: Set fullscreen options to be as full screen as possible
@@ -84,7 +84,7 @@ endif
 " when you are typing, and bring it back once you stop.
 " On my system it's just always gone forever.
 " So, we remedy this.
-set nomousehide
+"set nomousehide
 
 " 'Config changed' autocmd hook
 autocmd BufWritePost $MYGVIMRC let g:needrestart = 1
