@@ -19,7 +19,7 @@ echo "Pre-flight sanity checks..."
 if [[ -n $($GIT submodule status | egrep "^-") ]] ; then
     echo "WARNING: Some submodules apparently need to be initialized."
     echo "Correcting..."
-    { $GIT submodule init && $GIT submodule update ; } || exit 1
+    $GIT submodule update --init --recursive || exit 1
     echo "Modules initialized."
 fi
 echo "Everything's good. Checking for plugin updates..."
