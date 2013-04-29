@@ -190,3 +190,6 @@
 	path = .vim/bundle/jedi-vim
 	url = git://github.com/davidhalter/jedi-vim.git
         ignore = untracked
+[submodule ".vim/bundle/ultisnip"]
+	path = .vim/bundle/ultisnip
+	url = git://github.com/guns/ultisnips.git
