@@ -193,6 +193,8 @@
 [submodule ".vim/bundle/ultisnip"]
 	path = .vim/bundle/ultisnip
 	url = git://github.com/guns/ultisnips.git
+        ignore = untracked
 [submodule ".vim/bundle/nazca"]
 	path = .vim/bundle/nazca
 	url = https://github.com/jelera/vim-nazca-colorscheme
+        ignore = untracked
