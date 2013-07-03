@@ -362,9 +362,11 @@ let g:SuperTabSefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 " -- }
 
-" Snipmate Settings -- {
-" You may override the author setting in your .vimrc.local
-let g:snips_author = 'Alexandre Gauthier <alex@underwares.org>'
+" UltiSnips Settings -- {
+let g:UltiSnipsEditSplit="horizontal"
+let g:UltiSnipsListSnippets="<Leader><c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " -- }
 
 " MiniBufExpl settings -- {
