@@ -3,7 +3,9 @@
 # Originally written in 10 minutes at 5am while sleep deprived
 # 
 # Surely, it must be reliable, right?
-# 
+#
+# (c) Alexandre Gauthier 2010-2011, All rights reserved
+# Released under the MIT License.
 
 GIT=$(which git)
 
