@@ -2,10 +2,6 @@
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
         ignore = untracked
-[submodule ".vim/bundle/sparkup"]
-	path = .vim/bundle/sparkup
-	url = https://github.com/kogakure/vim-sparkup.git
-        ignore = untracked
 [submodule ".vim/bundle/html5"]
 	path = .vim/bundle/html5
 	url = https://github.com/othree/html5.vim.git
