@@ -49,7 +49,7 @@ if [[ "$C" == "$SM" ]] ; then
         { echo -e "\nFailed to remove from .git/config, sorry." ; exit 1 ; }
 
     $GIT add .gitmodules
-    $GIT rm -f $SM > /dev/null
+    $GIT rm -rf $SM > /dev/null
 
     if [[ $? -ne 0 ]] ; then
         echo -e "\nStaging removal of $SM failed." 
