@@ -78,10 +78,6 @@
 	path = .vim/bundle/manpageview
 	url = https://github.com/vim-scripts/ManPageView.git
         ignore = untracked
-[submodule ".vim/bundle/VimStructuredText"]
-	path = .vim/bundle/VimStructuredText
-	url = https://github.com/vim-scripts/VST.git
-        ignore = untracked
 [submodule ".vim/bundle/DrawIt"]
 	path = .vim/bundle/DrawIt
 	url = https://github.com/vim-scripts/DrawIt.git
