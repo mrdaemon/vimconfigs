@@ -113,6 +113,7 @@ endif
 " Vim 7.3 specific colors
 if version >= 703
   hi ColorColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=233 cterm=UNDERLINE
+  hi SignColumn guifg=NONE guibg=#121212 gui=NONE ctermfg=NONE ctermbg=233 cterm=NONE
 endif
 
 " Syntax highlighting
