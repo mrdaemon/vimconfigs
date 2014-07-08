@@ -8,9 +8,11 @@
 
 GIT=$(which git)
 
-echo "Vim pathogen git submodule update script"
-echo "Alexandre Gauthier 2010-2011"
-echo "https://github.com/mrdaemon/vimconfigs"
+cat <<EOF
+Vim pathogen git submodule update script
+Alexandre Gauthier 2010-2011
+https://github.com/mrdaemon/vimconfigs
+EOF
 echo -n -e "\n"
 
 [[ -z $GIT ]] && { "Woops, can't find git on this machine, bye." ; exit 1 ; }
