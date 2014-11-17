@@ -185,15 +185,24 @@
 [submodule ".vim/bundle/vim-golang"]
 	path = .vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+        ignore = untracked
 [submodule ".vim/bundle/vim-eunuch"]
 	path = .vim/bundle/vim-eunuch
 	url = git://github.com/tpope/vim-eunuch.git
+        ignore = untracked
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+        ignore = untracked
 [submodule ".vim/bundle/riv"]
 	path = .vim/bundle/riv
 	url = https://github.com/Rykka/riv.vim
+        ignore = untracked
 [submodule ".vim/bundle/mru"]
 	path = .vim/bundle/mru
 	url = https://github.com/yegappan/mru
+        ignore = untracked
+[submodule ".vim/bundle/clickable.vim"]
+	path = .vim/bundle/clickable.vim
+	url = https://github.com/Rykka/clickable.vim.git
+        ignore = untracked
