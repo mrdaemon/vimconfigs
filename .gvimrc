@@ -21,6 +21,8 @@
 set guioptions-=T
 set guioptions-=r
 set guioptions-=l
+set guioptions-=L
+set guioptions-=R
 
 " Add Vim icon to window, where it is shown depends on platform, windowing
 " system, X11 server depth, etc etc.
