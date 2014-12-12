@@ -206,3 +206,6 @@
 	path = .vim/bundle/clickable.vim
 	url = https://github.com/Rykka/clickable.vim.git
         ignore = untracked
+[submodule ".vim/bundle/vim-hybrid"]
+	path = .vim/bundle/vim-hybrid
+	url = https://github.com/w0ng/vim-hybrid

@@ -27,7 +27,7 @@ if [[ ! -d ".git" ]] ; then
 fi
 
 if [[ ! -f ".gitmodules" ]] ; then
-    echo "Look you need submodules to want to remove a submodule. Geez."
+    echo "Look you need submodules to want to remove a submodule, gosh"
     exit 1
 fi
 
