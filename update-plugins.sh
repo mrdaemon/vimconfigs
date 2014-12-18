@@ -15,7 +15,10 @@ https://github.com/mrdaemon/vimconfigs
 EOF
 echo -n -e "\n"
 
-[[ -z $GIT ]] && { "Woops, can't find git on this machine, bye." ; exit 1 ; }
+if [[ -z $GIT ]] ; then
+    >&2 echo "Woops, can't find git on this machine, bye."
+    exit 1
+fi
 
 echo "Pre-flight sanity checks..."
 if [[ -n $($GIT submodule status | egrep "^-") ]] ; then
