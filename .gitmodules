@@ -209,6 +209,6 @@
 [submodule ".vim/bundle/vim-hybrid"]
 	path = .vim/bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid
-[submodule ".vim\\bundle\\vim-atom-dark"]
-	path = .vim\\bundle\\vim-atom-dark
+[submodule ".vim/bundle/vim-atom-dark"]
+	path = .vim/bundle/vim-atom-dark
 	url = https://github.com/gosukiwi/vim-atom-dark
