@@ -91,7 +91,7 @@ syntax on          " Auto select syntax highlighting from filetype
 " (GUI colorscheme is defined in .gvimrc)
 
 "set background=dark " Force dark version
-colorscheme atom-dark-256
+colorscheme nazca
 
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
@@ -106,7 +106,7 @@ if version >= 703
 
     " Override color for highlighted column
     " Often it is this eye melting red. (Unecessary for liquidcarbon/nazca)
-    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+    "hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 " -- }
 " }
