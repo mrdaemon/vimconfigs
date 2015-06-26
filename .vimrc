@@ -91,7 +91,7 @@ syntax on          " Auto select syntax highlighting from filetype
 " (GUI colorscheme is defined in .gvimrc)
 
 "set background=dark " Force dark version
-colorscheme nazca
+colorscheme atom-dark-256
 
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
