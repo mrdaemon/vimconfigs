@@ -43,7 +43,7 @@ endif
 
 " colorscheme to use for GUI
 "set background=dark
-colorscheme atom-dark-256
+colorscheme nazca
 
 " Overridding the color column color in gvim as well -- the colorscheme
 " change above will reset it.
@@ -53,7 +53,7 @@ if version >= 703
 
     " Override color for highlighted column
     " Often it is this eye melting red (Unecessary for liquidcarbon and nazca)
-    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+"    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 
 " Set GUI Font depending on the kind of gui/platform being loaded.
