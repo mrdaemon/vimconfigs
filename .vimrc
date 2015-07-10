@@ -106,7 +106,7 @@ if version >= 703
 
     " Override color for highlighted column
     " Often it is this eye melting red. (Unecessary for liquidcarbon/nazca)
-"    hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
+    "hi ColorColumn term=reverse ctermbg=238 guibg=#1f1f1f
 endif
 " -- }
 " }
