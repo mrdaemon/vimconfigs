@@ -63,13 +63,13 @@ compiler pylint
 
 
 " Strips spurious whitespace on save
-func! b:DeleteTrailingWS()
+func! s:DeleteTrailingWS()
   exe "normal mz"
   %s/\s\+$//ge
   exe "normal `z"
 endfunc
 
-autocmd BufWrite *.py call b:DeleteTrailingWS()
+autocmd BufWrite *.py call s:DeleteTrailingWS()
 
 
 
