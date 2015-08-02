@@ -1,4 +1,4 @@
-" vim: set foldmarker={,} foldlevel=0: 
+" vim: set foldmarker={,} foldlevel=0:
 "         ,-.-. .=-.-.       ___                _,.----.
 "  ,--.-./=/ ,//==/_ /.-._ .'=.'\  .-.,.---.  .' .' -   \
 " /==/, ||=| -|==|, |/==/ \|==|  |/==/  `   \/==/  ,  ,-'
@@ -87,7 +87,7 @@ set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 " -- Highlighting, spelling and Text Appearance {
 syntax on          " Auto select syntax highlighting from filetype
 
-" Color Scheme 
+" Color Scheme
 " (GUI colorscheme is defined in .gvimrc)
 
 "set background=dark " Force dark version
@@ -141,7 +141,7 @@ set laststatus=2   " Always show status bar
 "
 "   Character block:
 "     ASCII and Hex for current char
-"  
+"
 "   Restart needed flag*
 "
 set statusline=%n\:%f%m%r%h%w%{fugitive#statusline()}\ \%y\%{SafeGet('b:gzf','[gz]')}\ \|%{FileEncoding()}\|%{&ff}\|\ \|\%04l,%04v\|%p%%/%L\|\ \|char\:%03.3b\|0x%02.2B\|\ %{SafeGet('g:needrestart','**CONFIG\!**\ ')}
@@ -240,7 +240,7 @@ if version >= 700
     "
     " Not sure where I originally got the reference code I based
     " this function upon. Credit goes to whoever wrote the code fragment
-    " which has been sitting in my ~/tmp for ages until I shaped it into 
+    " which has been sitting in my ~/tmp for ages until I shaped it into
     " this.
     let s:sline_hi = {}
     function! s:save_statuslinehl()
@@ -299,7 +299,7 @@ endfunction
 " Command to open a non-file backed buffer showing difference between current
 " buffer state and file on disk. Useful for figuring out what you actually
 " changed before going out and writing the buffer to disk.
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p 
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p
             \ | diffthis
 
 " Status bar autocommands
@@ -369,20 +369,17 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " -- }
 
-" MiniBufExpl settings -- {
-let g:miniBufExplMapWindowNavVim = 1    " Maps ctrl+ vim movement keys to
-                                        " window navigation
-let g:miniBufExplMapWindowNavArrows = 1 " Maps ctrl + arrows to window
-                                        "  navigation
-let g:miniBufExplMapCTabSwitchBufs = 0  " Switch buffer tabs
-                                        "  with <C-TAB> and <C-S-TAB>
-let g:miniBufExplModSelTarget = 1       " Coerces buffers into not appearing
-                                        "  in non-editable windows.
-let g:miniBufExplUseSingleClick = 0     " Activate buffer tabs with a
-                                        "  single click
-
-" Bind <F4> to MiniBufExpl toggle (hide/show)
-noremap <F4> :TMiniBufExplorer<CR>
+" airline settings -- {
+let g:airline#extensions#tabline#enabled = 1
+"
+" Enable powerline fonts for GUIs
+" This somehow is too late when in .gvimrc.
+if has("gui_running")
+    " ... but not for windows.
+    if !has("gui_win32")
+        let g:airline_powerline_fonts = 1
+    endif
+endif
 " -- }
 
 " Pylint Settings -- {

@@ -38,7 +38,7 @@ set guioptions+=a
 " somehow, it develops ugly white borders around
 " the bottom frame, I have no clue where they come from.
 if !has("gui_win32")
-        :set guioptions-=m
+    :set guioptions-=m
 endif
 
 " colorscheme to use for GUI
@@ -59,12 +59,12 @@ endif
 " Set GUI Font depending on the kind of gui/platform being loaded.
 " TODO: Set these fonts correctly once I load this on my other work platforms.
 if has("gui_win32")
-	:set guifont=Consolas:h11:cANSI
+    set guifont=Consolas:h11:cANSI
 elseif has("gui_macvim")
-	:set antialias " Use smooth, antialiased fonts (OS X Specific)
-	:set guifont=Menlo\ Regular:h12
-elseif has("gui_gnome")
-        :set guifont=DejaVu\ Sans\ Mono\ 10
+    set antialias " Use smooth, antialiased fonts (OS X Specific)
+    set guifont=Menlo\ Regular:h12
+else
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 endif
 
 " MacVim specific: Set fullscreen options to be as full screen as possible

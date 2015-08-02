@@ -208,3 +208,9 @@
 [submodule ".vim/bundle/vim-atom-dark"]
 	path = .vim/bundle/vim-atom-dark
 	url = https://github.com/gosukiwi/vim-atom-dark
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = https://github.com/powerline/fonts
