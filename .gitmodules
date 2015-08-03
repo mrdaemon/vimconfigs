@@ -134,10 +134,6 @@
 	path = .vim/bundle/autoclose
 	url = https://github.com/Townk/vim-autoclose.git
         ignore = untracked
-[submodule ".vim/bundle/Conque-Shell"]
-	path = .vim/bundle/Conque-Shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
-        ignore = untracked
 [submodule ".vim/bundle/enter-indent"]
 	path = .vim/bundle/enter-indent
 	url = git://github.com/vim-scripts/Enter-Indent.git
