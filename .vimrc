@@ -414,7 +414,9 @@ endif
 " -- }
 
 " Virtualenv Settings -- {
-if !has('gui_win32')
+if has('gui_win32')
+    let g:virtualenv_directory = '~/envs'
+else
     let g:virtualenv_directory = '~/.env'
 endif
 " -- }
