@@ -23,8 +23,8 @@
 " Feels a lot neater. Must be called first with filetype disabled.
 "   @ See vim.org script 2332
 "   @ https://github.com/tpope/vim-pathogen
-filetype off
-call pathogen#runtime_append_all_bundles()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 call pathogen#helptags()
 " }
 
