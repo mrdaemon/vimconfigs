@@ -42,25 +42,13 @@
 	path = .vim/bundle/Gist
 	url = https://github.com/vim-scripts/Gist.vim.git
         ignore = untracked
-[submodule ".vim/bundle/hexHighlight"]
-	path = .vim/bundle/hexHighlight
-	url = https://github.com/vim-scripts/hexHighlight.vim.git
-        ignore = untracked
 [submodule ".vim/bundle/RST-Tables"]
 	path = .vim/bundle/RST-Tables
 	url = https://github.com/vim-scripts/RST-Tables.git
         ignore = untracked
-[submodule ".vim/bundle/yate"]
-	path = .vim/bundle/yate
-	url = https://github.com/vim-scripts/yate.git
-        ignore = untracked
 [submodule ".vim/bundle/pydoc"]
 	path = .vim/bundle/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim.git
-        ignore = untracked
-[submodule ".vim/bundle/figlet"]
-	path = .vim/bundle/figlet
-	url = https://github.com/vim-scripts/Figlet.vim.git
         ignore = untracked
 [submodule ".vim/bundle/pylint"]
 	path = .vim/bundle/pylint
@@ -89,10 +77,6 @@
 [submodule ".vim/bundle/muf"]
 	path = .vim/bundle/muf
 	url = https://github.com/vim-scripts/muf.vim.git
-        ignore = untracked
-[submodule ".vim/bundle/vimomni"]
-	path = .vim/bundle/vimomni
-	url = https://github.com/c9s/vimomni.vim.git
         ignore = untracked
 [submodule ".vim/bundle/wm-graphviz"]
 	path = .vim/bundle/wm-graphviz
@@ -185,10 +169,6 @@
 [submodule ".vim/bundle/riv"]
 	path = .vim/bundle/riv
 	url = https://github.com/Rykka/riv.vim
-        ignore = untracked
-[submodule ".vim/bundle/mru"]
-	path = .vim/bundle/mru
-	url = https://github.com/yegappan/mru
         ignore = untracked
 [submodule ".vim/bundle/clickable.vim"]
 	path = .vim/bundle/clickable.vim
