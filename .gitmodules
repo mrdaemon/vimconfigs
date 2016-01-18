@@ -158,10 +158,6 @@
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
 	ignore = untracked
-[submodule ".vim/bundle/colorscheme-vim-hybrid"]
-	path = .vim/bundle/colorscheme-vim-hybrid
-	url = git://github.com/w0ng/vim-hybrid.git
-	ignore = untracked
 [submodule ".vim/bundle/vim-heroku-theme"]
 	path = .vim/bundle/vim-heroku-theme
 	url = git://github.com/uu59/vim-herokudoc-theme.git
