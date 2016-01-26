@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Rather crappy and overly complex submodule update script.
 # Won't automagically add them to the index, but will show pretty changes.
-# Written primarily to manage my vim plugins through pathogen.
+# Written primarily to manage my vim bundles through pathogen.
 #
 # (c) Alexandre Gauthier 2010-2011, All rights reserved
 # Released under the MIT License.
@@ -27,7 +27,7 @@ if [[ -n $($GIT submodule status | egrep "^-") ]] ; then
     $GIT submodule update --init --recursive || exit 1
     echo "Modules initialized."
 fi
-echo "Everything's good. Checking for plugin updates..."
+echo "Everything's good. Checking for bundle updates..."
 
 if $GIT submodule -q foreach "$GIT checkout -q master && $GIT pull -q" ; then
     UC=$($GIT submodule status | grep "+" | wc -l | xargs)
