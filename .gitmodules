@@ -209,3 +209,6 @@
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule ".vim/bundle/vim-jinja2"]
+	path = .vim/bundle/vim-jinja2
+	url = https://github.com/mitsuhiko/vim-jinja.git
