@@ -58,7 +58,7 @@ set showcmd        " Show current command, text area etc as last line
 set shortmess=aI   " Use abbreviated messages and selfishly ignore uganda
 "set cmdheight=2   " Larger command window, more space for messages, which
                    "  directly translates to less *hit ENTER to continue*
-		   "  crap. God that can kill a good workflow.
+                   "  crap. God that can kill a good workflow.
 set visualbell     " For the love of god STOP BLEEPING WHILE I'M AT WORK
 " }
 
@@ -191,8 +191,8 @@ set infercase    " Adjust case of completed text
 set showmatch    " Briefly display matching brackets when inserting such.
 set matchtime=10 " How long to flash matching brackets, in 1/10th of a sec.
 set backspace=indent,eol,start  " Make backspace useful in insert mode:
-				"  Allows backspace over indent, end of line
-				"  and start of line.
+                                "  Allows backspace over indent, end of line
+                                "  and start of line.
 
 " -- Indent and tabbing {
 "  NOTE: The proper tabbing settings, i.e. shiftwdith, tabstop, etc
@@ -201,18 +201,18 @@ set backspace=indent,eol,start  " Make backspace useful in insert mode:
 
 set autoindent     " Automatically match indent of previous line, except if
                    "  the line starts with '#'. To disable that, see the
-		   "  keybind section of this file.
+                   "  keybind section of this file.
 
 "set smartindent   " Automatically indent based on c-like language rules.
                    "  -- Do not enable unlike you really enjoy breaking
-		   "  filetype-based indentation and fighting it forever.
+                   "  filetype-based indentation and fighting it forever.
 
 set tabstop=8      " Hard tab set to standard 8 spaces
 set softtabstop=4  " Number of spaces used for <Tab> during editing
 set shiftwidth=4   " Number of spaces for each (auto)indent step.
 set expandtab      " <Tab> inserts enough spaces to match the size of a tab,
                    "  which is defined above. Effectively makes the <Tab> key
-		   "  insert spaces instead of hard tabs.
+                   "  insert spaces instead of hard tabs.
 
 " -- }
 
