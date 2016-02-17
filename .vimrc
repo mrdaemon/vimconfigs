@@ -380,6 +380,9 @@ if has("gui_running")
         let g:airline_powerline_fonts = 1
     endif
 endif
+
+" Airline Theme (I'm fond of Luna, it look fantastic with nazca)
+let g:airline_theme = "luna"
 " -- }
 
 " Pylint Settings -- {
