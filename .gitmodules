@@ -212,3 +212,6 @@
 [submodule ".vim/bundle/vim-jinja2"]
 	path = .vim/bundle/vim-jinja2
 	url = https://github.com/mitsuhiko/vim-jinja.git
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
