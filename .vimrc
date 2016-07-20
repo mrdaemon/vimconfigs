@@ -353,6 +353,10 @@ nnoremap <S-F3> :set relativenumber!<CR>
 noremap <F1> :bprev!<CR>
 noremap <F2> :bnext!<CR>
 
+" F4 stores the current file path, relative to working directory, on the
+" system clipboard.
+noremap <F4> :let @* = @%<CR>
+
 " Toggle between paste and insert mode with F11
 set pastetoggle=<F11>
 
