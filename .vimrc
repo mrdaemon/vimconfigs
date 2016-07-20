@@ -9,7 +9,7 @@
 "   \==\  _ / /==/. //==/  / / , /==/  /\ ,  )`-.`.___.-'
 "    `--`--'  `--`-` `--`./  `--``--`-`--`--'
 "
-" Main vim editor confirguation file
+" Main vim editor configuration file
 " Alexandre Gauthier <alex@underwares.org>
 "
 " Up to date version always on github:
