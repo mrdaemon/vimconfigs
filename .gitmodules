@@ -218,3 +218,6 @@
 [submodule "consolas-powerline-font"]
 	path = consolas-powerline-font
 	url = https://github.com/eugeii/consolas-powerline-vim.git
+[submodule ".vim/bundle/elm"]
+	path = .vim/bundle/elm
+	url = https://github.com/lambdatoast/elm.vim
