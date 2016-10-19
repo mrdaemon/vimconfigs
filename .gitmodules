@@ -197,27 +197,36 @@
 [submodule ".vim/bundle/vim-man"]
 	path = .vim/bundle/vim-man
 	url = https://github.com/bruno-/vim-man.git
+        ignore = untracked
 [submodule ".vim/bundle/rust.vim"]
 	path = .vim/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+        ignore = untracked
 [submodule ".vim/bundle/vim-systemd-syntax"]
 	path = .vim/bundle/vim-systemd-syntax
 	url = https://github.com/Matt-Deacalion/vim-systemd-syntax.git
+        ignore = untracked
 [submodule ".vim/bundle/ultisnips"]
 	path = .vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips
+        ignore = untracked
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+        ignore = untracked
 [submodule ".vim/bundle/vim-jinja2"]
 	path = .vim/bundle/vim-jinja2
 	url = https://github.com/mitsuhiko/vim-jinja.git
+        ignore = untracked
 [submodule ".vim/bundle/vim-airline-themes"]
 	path = .vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+        ignore = untracked
 [submodule "consolas-powerline-font"]
 	path = consolas-powerline-font
 	url = https://github.com/eugeii/consolas-powerline-vim.git
+        ignore = untracked
 [submodule ".vim/bundle/elm"]
 	path = .vim/bundle/elm
 	url = https://github.com/lambdatoast/elm.vim
+        ignore = untracked
