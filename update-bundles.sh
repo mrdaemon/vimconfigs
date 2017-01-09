@@ -6,7 +6,7 @@
 # (c) Alexandre Gauthier 2010-2011, All rights reserved
 # Released under the MIT License.
 
-GIT=$(which git)
+GIT="$(which git)"
 
 cat <<EOF
 Vim pathogen git submodule update script
@@ -30,7 +30,7 @@ fi
 echo "Everything's good. Checking for bundle updates..."
 
 if $GIT submodule -q foreach "$GIT checkout -q master && $GIT pull -q" ; then
-    UC=$($GIT submodule status | grep "+" | wc -l | xargs)
+    UC="$($GIT submodule status | grep "+" | wc -l | xargs)"
 
     if [[ $UC -gt 0 ]] ; then
         echo -n -e "\n"
