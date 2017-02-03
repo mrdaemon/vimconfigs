@@ -230,7 +230,3 @@
 	path = .vim/bundle/elm
 	url = https://github.com/lambdatoast/elm.vim
         ignore = dirty
-[submodule ".vim/bundle/ansible-vim"]
-	path = .vim/bundle/ansible-vim
-	url = https://github.com/pearofducks/ansible-vim.git
-        ignore = untracked
