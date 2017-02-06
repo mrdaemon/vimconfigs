@@ -428,8 +428,11 @@ else
 endif
 " -- }
 
+" CtrlP Settings -- {
+" Use the python matcher, which is significantly faster
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
-" }
+" -- }
 
 " Misc {
 " Still there? Have some crappy easter eggs.
