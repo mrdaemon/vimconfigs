@@ -90,8 +90,8 @@ syntax on          " Auto select syntax highlighting from filetype
 " Color Scheme
 " (GUI colorscheme is defined in .gvimrc)
 
-"set background=dark " Force dark version
-colorscheme nazca
+set background=dark " Force dark version
+colorscheme hybrid
 
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
@@ -385,8 +385,8 @@ if has("gui_running")
     endif
 endif
 
-" Airline Theme (I'm fond of Luna, it look fantastic with nazca)
-let g:airline_theme = "luna"
+" Airline Theme
+let g:airline_theme = "hybrid"
 " -- }
 
 " Pylint Settings -- {
