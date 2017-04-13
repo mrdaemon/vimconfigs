@@ -258,3 +258,11 @@
 	path = .vim/bundle/vim-qml
 	url = https://github.com/peterhoeg/vim-qml
         ignore = untracked
+[submodule ".vim/bundle/vim-deep-space-colorscheme"]
+	path = .vim/bundle/vim-deep-space-colorscheme
+	url = https://github.com/tyrannicaltoucan/vim-deep-space.git
+        ignore = untracked
+[submodule ".vim/bundle/spacemacs-theme"]
+	path = .vim/bundle/spacemacs-theme
+        url = https://github.com/colepeters/spacemacs-theme.vim
+        ignore = untracked
