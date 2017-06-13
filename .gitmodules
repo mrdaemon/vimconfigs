@@ -246,3 +246,7 @@
 	path = .vim/bundle/yats
 	url = https://github.com/HerringtonDarkholme/yats.vim
         ignore = untracked
+[submodule ".vim/bundle/vim-racer"]
+	path = .vim/bundle/vim-racer
+	url = https://github.com/racer-rust/vim-racer.git
+        ignore = untracked
