@@ -250,3 +250,6 @@
 	path = .vim/bundle/vim-racer
 	url = https://github.com/racer-rust/vim-racer.git
         ignore = untracked
+[submodule ".vim/bundle/haproxy"]
+	path = .vim/bundle/haproxy
+	url = https://github.com/zimbatm/haproxy.vim.git
