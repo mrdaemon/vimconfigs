@@ -253,3 +253,8 @@
 [submodule ".vim/bundle/haproxy"]
 	path = .vim/bundle/haproxy
 	url = https://github.com/zimbatm/haproxy.vim.git
+        ignore = untracked
+[submodule ".vim/bundle/vim-qml"]
+	path = .vim/bundle/vim-qml
+	url = https://github.com/peterhoeg/vim-qml
+        ignore = untracked
