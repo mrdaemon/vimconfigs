@@ -379,10 +379,7 @@ let g:airline#extensions#tabline#enabled = 1
 " Enable powerline fonts for GUIs
 " This somehow is too late when in .gvimrc.
 if has("gui_running")
-    " ... but not for windows.
-    if !has("gui_win32")
-        let g:airline_powerline_fonts = 1
-    endif
+    let g:airline_powerline_fonts = 1
 endif
 
 " Airline Theme

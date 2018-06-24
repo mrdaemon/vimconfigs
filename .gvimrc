@@ -59,7 +59,7 @@ endif
 " Set GUI Font depending on the kind of gui/platform being loaded.
 " TODO: Set these fonts correctly once I load this on my other work platforms.
 if has("gui_win32")
-    set guifont=Consolas:h11:cANSI
+    set guifont=Dejavu_Sans_Mono_for_Powerline:h11:cANSI
 elseif has("gui_macvim")
     set antialias " Use smooth, antialiased fonts (OS X Specific)
     set guifont=Menlo\ Regular:h12
