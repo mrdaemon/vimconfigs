@@ -266,3 +266,7 @@
 	path = .vim/bundle/spacemacs-theme
         url = https://github.com/colepeters/spacemacs-theme.vim
         ignore = untracked
+[submodule ".vim/bundle/vim-taskwarrior"]
+	path = .vim/bundle/vim-taskwarrior
+	url = https://github.com/blindFS/vim-taskwarrior.git
+    ignore = untracked
