@@ -270,3 +270,6 @@
 	path = .vim/bundle/vim-taskwarrior
 	url = https://github.com/blindFS/vim-taskwarrior.git
     ignore = untracked
+[submodule ".vim/bundle/vim-puppet"]
+	path = .vim/bundle/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
