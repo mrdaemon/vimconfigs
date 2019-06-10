@@ -39,7 +39,7 @@ set encoding=utf-8          " Default encoding used through vim
 " Enable modelines in patched/safe vim versions and disable them in any
 " vulnerable version. Modelines are vim settings embedded in files, such as
 " the first line of his very file.
-if (v:version == 603 && has("patch045")) || (v:version > 603)
+if (v:version == 801 && has("patch1365")) || (v:version > 801)
     set modeline
 else
     set nomodeline
