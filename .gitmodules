@@ -38,10 +38,6 @@
 	path = .vim/bundle/Gist
 	url = https://github.com/vim-scripts/Gist.vim.git
         ignore = untracked
-[submodule ".vim/bundle/RST-Tables"]
-	path = .vim/bundle/RST-Tables
-	url = https://github.com/vim-scripts/RST-Tables.git
-        ignore = untracked
 [submodule ".vim/bundle/pydoc"]
 	path = .vim/bundle/pydoc
 	url = https://github.com/vim-scripts/pydoc.vim.git
