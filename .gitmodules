@@ -10,10 +10,6 @@
 	path = .vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
         ignore = untracked
-[submodule ".vim/bundle/gundo"]
-	path = .vim/bundle/gundo
-	url = https://github.com/sjl/gundo.vim.git
-        ignore = untracked
 [submodule ".vim/bundle/fugitive"]
 	path = .vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -146,10 +142,6 @@
 	path = .vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
         ignore = untracked
-[submodule ".vim/bundle/riv"]
-	path = .vim/bundle/riv
-	url = https://github.com/Rykka/riv.vim
-        ignore = untracked
 [submodule ".vim/bundle/clickable.vim"]
 	path = .vim/bundle/clickable.vim
 	url = https://github.com/Rykka/clickable.vim.git
@@ -170,10 +162,6 @@
 	path = powerline-fonts
 	url = https://github.com/powerline/fonts
         ignore = untracked
-[submodule ".vim/bundle/vim-virtualenv"]
-	path = .vim/bundle/vim-virtualenv
-	url = https://github.com/jmcantrell/vim-virtualenv
-        ignore = untracked
 [submodule ".vim/bundle/unite"]
 	path = .vim/bundle/unite
 	url = https://github.com/Shougo/unite.vim
@@ -189,10 +177,6 @@
 [submodule ".vim/bundle/vim-systemd-syntax"]
 	path = .vim/bundle/vim-systemd-syntax
 	url = https://github.com/Matt-Deacalion/vim-systemd-syntax.git
-        ignore = untracked
-[submodule ".vim/bundle/ultisnips"]
-	path = .vim/bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips
         ignore = untracked
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
@@ -218,10 +202,6 @@
 	path = .vim/bundle/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
         ignore = untracked
-[submodule ".vim/bundle/ctrlp-py-matcher"]
-	path = .vim/bundle/ctrlp-py-matcher
-	url = https://github.com/FelikZ/ctrlp-py-matcher
-        ignore = untracked
 [submodule ".vim/bundle/vimwiki-official"]
 	path = .vim/bundle/vimwiki-official
 	url = https://github.com/vimwiki/vimwiki.git
@@ -233,10 +213,6 @@
 [submodule ".vim/bundle/yats"]
 	path = .vim/bundle/yats
 	url = https://github.com/HerringtonDarkholme/yats.vim
-        ignore = untracked
-[submodule ".vim/bundle/vim-racer"]
-	path = .vim/bundle/vim-racer
-	url = https://github.com/racer-rust/vim-racer.git
         ignore = untracked
 [submodule ".vim/bundle/haproxy"]
 	path = .vim/bundle/haproxy
