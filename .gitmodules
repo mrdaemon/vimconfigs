@@ -6,10 +6,6 @@
 	path = .vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
         ignore = untracked
-[submodule ".vim/bundle/abolish"]
-	path = .vim/bundle/abolish
-	url = https://github.com/tpope/vim-abolish.git
-        ignore = untracked
 [submodule ".vim/bundle/repeat"]
 	path = .vim/bundle/repeat
 	url = https://github.com/tpope/vim-repeat.git
@@ -30,17 +26,9 @@
 	path = .vim/bundle/pylint
 	url = https://github.com/vim-scripts/pylint.vim.git
         ignore = untracked
-[submodule ".vim/bundle/CleverCSS"]
-	path = .vim/bundle/CleverCSS
-	url = https://github.com/vim-scripts/clevercss.vim.git
-        ignore = untracked
 [submodule ".vim/bundle/manpageview"]
 	path = .vim/bundle/manpageview
 	url = https://github.com/vim-scripts/ManPageView.git
-        ignore = untracked
-[submodule ".vim/bundle/DrawIt"]
-	path = .vim/bundle/DrawIt
-	url = https://github.com/vim-scripts/DrawIt.git
         ignore = untracked
 [submodule ".vim/bundle/nginx-syntax"]
 	path = .vim/bundle/nginx-syntax
@@ -78,18 +66,6 @@
 	path = .vim/bundle/indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
         ignore = untracked
-[submodule ".vim/bundle/html-autoclosetag"]
-	path = .vim/bundle/html-autoclosetag
-	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
-        ignore = untracked
-[submodule ".vim/bundle/autoclose"]
-	path = .vim/bundle/autoclose
-	url = https://github.com/Townk/vim-autoclose.git
-        ignore = untracked
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-        ignore = untracked
 [submodule ".vim/bundle/badwolf"]
 	path = .vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
@@ -101,10 +77,6 @@
 [submodule ".vim/bundle/vim-golang"]
 	path = .vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
-        ignore = untracked
-[submodule ".vim/bundle/clickable.vim"]
-	path = .vim/bundle/clickable.vim
-	url = https://github.com/Rykka/clickable.vim.git
         ignore = untracked
 [submodule ".vim/bundle/vim-hybrid"]
 	path = .vim/bundle/vim-hybrid
@@ -121,10 +93,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/powerline/fonts
-        ignore = untracked
-[submodule ".vim/bundle/unite"]
-	path = .vim/bundle/unite
-	url = https://github.com/Shougo/unite.vim
         ignore = untracked
 [submodule ".vim/bundle/vim-man"]
 	path = .vim/bundle/vim-man
@@ -153,14 +121,6 @@
 [submodule "consolas-powerline-font"]
 	path = consolas-powerline-font
 	url = https://github.com/eugeii/consolas-powerline-vim.git
-        ignore = untracked
-[submodule ".vim/bundle/elm"]
-	path = .vim/bundle/elm
-	url = https://github.com/lambdatoast/elm.vim
-        ignore = dirty
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
         ignore = untracked
 [submodule ".vim/bundle/base16-colorschemes"]
 	path = .vim/bundle/base16-colorschemes
@@ -198,3 +158,6 @@
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
         ignore = untracked
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
