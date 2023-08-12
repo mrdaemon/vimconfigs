@@ -194,7 +194,7 @@ set backspace=indent,eol,start  " Make backspace useful in insert mode:
                                 "  Allows backspace over indent, end of line
                                 "  and start of line.
 
-" -- Indent and tabbing {
+" Indent and tabbing -- {
 "  NOTE: The proper tabbing settings, i.e. shiftwdith, tabstop, etc
 "        are all defined in their specific filetype plugins wherever they
 "        actually differ from the generic defaults below.
@@ -214,6 +214,9 @@ set expandtab      " <Tab> inserts enough spaces to match the size of a tab,
                    "  which is defined above. Effectively makes the <Tab> key
                    "  insert spaces instead of hard tabs.
 
+" -- }
+" Diff mode settings --{
+set diffopt=internal,filler,closeoff,indent-heuristic,algorithm:patience
 " -- }
 
 " Insert mode completion {
