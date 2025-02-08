@@ -29,7 +29,7 @@ if [[ -n $($GIT submodule status | egrep "^-") ]] ; then
 fi
 echo "Everything's good. Checking for bundle updates..."
 
-if $GIT submodule -q foreach "$GIT checkout -q master && $GIT pull -q" ; then
+if $GIT submodule -q foreach "$GIT checkout -q  $(awk -F "/" '{print $NF}' .git/refs/remotes/origin/HEAD) && $GIT pull -q" ; then
     UC="$($GIT submodule status | grep "+" | wc -l | xargs)"
 
     if [[ $UC -gt 0 ]] ; then
