@@ -104,7 +104,7 @@
         ignore = untracked
 [submodule ".vim/bundle/vim-systemd-syntax"]
 	path = .vim/bundle/vim-systemd-syntax
-	url = https://github.com/Matt-Deacalion/vim-systemd-syntax.git
+        url = https://codeberg.org/Dokana/vim-systemd-syntax.git
         ignore = untracked
 [submodule ".vim/bundle/vim-pathogen"]
 	path = .vim/bundle/vim-pathogen
