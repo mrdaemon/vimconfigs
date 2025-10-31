@@ -160,3 +160,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule ".vim/bundle/catpuccin-theme"]
+	path = .vim/bundle/catpuccin-theme
+	url = https://github.com/catppuccin/vim.git
