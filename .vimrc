@@ -90,8 +90,8 @@ syntax on          " Auto select syntax highlighting from filetype
 " Color Scheme
 " (GUI colorscheme is defined in .gvimrc)
 
-set background=dark " Force dark version
-colorscheme hybrid
+"set background=dark " Force dark version
+colorscheme catppuccin_mocha
 
 set cursorline     " Highlight current line.
 set hlsearch       " Highlight search results
@@ -178,6 +178,8 @@ set title    " Set terminal title to filename and status
 
 set t_Co=256 " Force terminal into 256 colors mode.
              "  ** this WILL be nasty on crappy terms like Terminal.app **
+
+set termguicolors " Modern zillion colors
 " }
 
 " Mouse settings {
@@ -386,7 +388,7 @@ if has("gui_running")
 endif
 
 " Airline Theme
-let g:airline_theme = "hybrid"
+let g:airline_theme = "catppuccin_mocha"
 " -- }
 
 " Pylint Settings -- {
