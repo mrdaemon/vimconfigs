@@ -304,8 +304,8 @@ endfunction
 " Command to open a non-file backed buffer showing difference between current
 " buffer state and file on disk. Useful for figuring out what you actually
 " changed before going out and writing the buffer to disk.
-command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p
-            \ | diffthis
+"command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p
+"            \ | diffthis
 
 " Status bar autocommands
 autocmd BufRead *.gz let b:gzf = 1 "[GZ] status bar flag
