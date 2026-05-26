@@ -218,7 +218,11 @@ set expandtab      " <Tab> inserts enough spaces to match the size of a tab,
 
 " -- }
 " Diff mode settings --{
-set diffopt=internal,filler,closeoff,indent-heuristic,algorithm:patience
+if has('mac') && $VIM == '/usr/share/vim'
+	set diffopt-=internal
+elseif has('patch-8.1.0360')
+	set diffopt+=filler,closeoff,indent-heuristic,algorithm:patience
+endif
 " -- }
 
 " Insert mode completion {
